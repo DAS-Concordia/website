@@ -1,0 +1,27 @@
+.institutions {
+  padding: 2rem 0;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.institution {
+  text-align: center;
+  margin: var(--ifm-spacing-horizontal) 0;
+  position: relative;
+  height: 180px;
+  border-radius: var(--ifm-card-border-radius);
+}
+
+html[data-theme="dark"] .institution {
+  background-color: var(--ifm-color-gray-500);
+}
+
+.institution img {
+  max-height: 75px;
+  max-width: 250px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

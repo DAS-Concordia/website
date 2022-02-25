@@ -16,8 +16,24 @@
   }
 }
 
+.heroBanner a {
+  color: var(--ifm-color-primary-lightest);
+}
+
+.heroBanner b{
+  color: var(--ifm-color-primary-lightest);
+}
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.logo {
+  max-width: 250px;
+}
+
+.notes svg{
+  max-width: 10px;
 }

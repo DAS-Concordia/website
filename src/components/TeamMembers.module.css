@@ -1,0 +1,21 @@
+.memberLarge {
+  text-align: center;
+}
+
+.memberLarge > div {
+  max-width: 400px;
+  display: inline-block;
+  text-align: left;
+}
+
+.member a {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.member .website {
+  padding: 0.25rem;
+}
+
+.member a:hover {
+  text-decoration: none;
+}

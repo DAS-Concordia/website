@@ -1,0 +1,31 @@
+name: "Deploy"
+
+on:
+  push:
+    branches: [main]
+
+env:
+  DEPLOYMENT_BRANCH: main
+  CURRENT_BRANCH: main
+  USE_SSH: true
+
+jobs:
+  gh-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+      - run: npm ci
+      - name: Release to GitHub Pages
+        env:
+          USE_SSH: true
+          GIT_USER: git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "gh-actions"
+          npm run deploy

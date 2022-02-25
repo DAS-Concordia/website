@@ -6,14 +6,13 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #862c4d;
-  --ifm-color-primary-dark: #792845;
-  --ifm-color-primary-darker: #722541;
-  --ifm-color-primary-darkest: #5e1f36;
-  --ifm-color-primary-light: #933055;
-  --ifm-color-primary-lighter: #9a3359;
-  --ifm-color-primary-lightest: #ae3964;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #366d9b;
+  --ifm-color-primary-dark: #31628b;
+  --ifm-color-primary-darker: #2e5d84;
+  --ifm-color-primary-darkest: #264c6d;
+  --ifm-color-primary-light: #3b78ab;
+  --ifm-color-primary-lighter: #3e7db2;
+  --ifm-color-primary-lightest: #649fd0;
 }
 
 .docusaurus-highlight-code-line {
@@ -23,6 +22,20 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
+html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.twitter-timeline > .timeline-Tweet-text{
+  color: #5e1f36;
+  font-size: 10px;
+}
+
+h2.section {
+  margin: 1.5em 0 1em;
+  /* font-size: 2em; */
+}
+
+h2.section::first-letter {
+  color: var(--ifm-color-primary-darker);
 }

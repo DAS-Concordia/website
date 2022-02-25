@@ -1,0 +1,18 @@
+.title {
+    text-align: center;
+}
+
+.title  h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+
+  font-weight: 900;
+  max-width: 850px;
+  display: inline-block;
+}
+
+.title b {
+  color: var(--ifm-color-primary);
+  font-weight: 900;
+}
