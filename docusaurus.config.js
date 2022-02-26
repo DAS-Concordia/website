@@ -16,6 +16,7 @@ const config = {
   favicon: "img/favicon.ico",
   organizationName: "DAS-Concordia", // Usually your GitHub org/user name.
   projectName: "DAS-Concordia.github.io", // Usually your repo name.
+  trailingSlash: false,
 
   presets: [
     [
