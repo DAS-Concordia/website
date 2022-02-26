@@ -8,8 +8,9 @@ import styles from "./index.module.css";
 import HomepageFeatures, { NotesSection } from "../components/HomepageFeatures";
 import useGlobalData, { usePluginData } from "@docusaurus/useGlobalData";
 import logo from "../../static/img/logo.png";
-import { TwitterSection } from "../components/Twitter";
+import { TwitterFeed, TwitterSection } from "../components/Twitter";
 import HomepageSectionTitle from "../components/HomepageSectionTitle";
+import HomeNotes from "./_home.mdx";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -20,18 +21,6 @@ function HomepageHeader() {
         <h1 className="hero__title">
           <b>D</b>ata-driven <b>A</b>nalysis of <b>S</b>oftware Lab
         </h1>
-        <p className="hero__subtitle">
-          DAS is part of the Computer Science and Software Engineering
-          department at Concordia University
-        </p>
-        one of the{" "}
-        <a
-          target="_blank"
-          href="https://www.topuniversities.com/university-rankings-articles/top-50-under-50-next-50-under-50/qs-top-50-under-50-2020"
-        >
-          top 100 universities under 50 years
-        </a>{" "}
-        in the world
       </div>
     </header>
   );
@@ -44,9 +33,18 @@ export default function Home(): JSX.Element {
     <Layout title={siteConfig.title} description={siteConfig.tagline}>
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
-        <NotesSection />
-        <TwitterSection />
+        <section>
+          <div className="container">
+            <div className="row margin-top--lg">
+              <div className={clsx("col col--7 margin-bottom--lg")}>
+                <HomeNotes />
+              </div>
+              <div className={clsx("col col--5 margin-bottom--lg")}>
+                <TwitterFeed />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );
