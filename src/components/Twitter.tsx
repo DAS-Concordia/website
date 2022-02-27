@@ -21,7 +21,7 @@ export const TwitterSection = () => {
   );
 };
 
-export const TwitterFeed = () => {
+export const TwitterFeed = ({ tweetLimit = 5, username, accountName }) => {
   const { isDarkTheme } = useThemeContext();
 
   useEffect(() => {
@@ -38,10 +38,10 @@ export const TwitterFeed = () => {
       data-lang="en"
       data-chrome="noheader,nofooter,noborders"
       data-theme={isDarkTheme ? "dark" : "light"}
-      data-tweet-limit="3"
-      href="https://twitter.com/DASLabConcordia?ref_src=twsrc%5Etfw"
+      data-tweet-limit={tweetLimit}
+      href={`https://twitter.com/${username}?ref_src=twsrc%5Etfw`}
     >
-      Tweets by DAS Lab
+      Tweets by {accountName}
     </a>
   );
 };

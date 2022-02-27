@@ -40,7 +40,11 @@ export default function Home(): JSX.Element {
                 <HomeNotes />
               </div>
               <div className={clsx("col col--5 margin-bottom--lg")}>
-                <TwitterFeed />
+                <TwitterFeed
+                  username="DASLabConcordia"
+                  accountName="DAS Lab"
+                  tweetLimit="2"
+                />
               </div>
             </div>
           </div>
