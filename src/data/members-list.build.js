@@ -44,14 +44,6 @@ function sortMembersByCategory(a, b) {
   return a.category > b.category ? 1 : -1;
 }
 
-function sortMembersByDates(a, b) {
-  if (a.end_date > b.end_date) return 1;
-  if (a.end_date < b.end_date) return -1;
-  if (a.start_date > b.start_date) return 1;
-  if (a.start_date < b.start_date) return -1;
-  return 0;
-}
-
 const categoriesOrder = {
   Professors: 1,
   "Postdoctoral Researchers": 2,
@@ -62,9 +54,28 @@ const categoriesOrder = {
   Visitors: 7,
 };
 
+const rolesOrder = {
+  Professor: 1,
+  "Postdoctoral Researcher": 2,
+  "PhD Student": 3,
+  "Masters Student": 4,
+  "Undergraduate Student": 5,
+};
+
 function sortCategories(a, b) {
   if (a.title === b.title) return 0;
   return categoriesOrder[a.title] > categoriesOrder[b.title] ? 1 : -1;
+}
+
+function sortMembers(a, b) {
+  if (a.role != b.role) {
+    return  rolesOrder[a.role] > rolesOrder[b.role] ? 1 : -1;
+  }
+  if (a.end_date > b.end_date) return -1;
+  if (a.end_date < b.end_date) return 1;
+  if (a.start_date > b.start_date) return 1;
+  if (a.start_date < b.start_date) return -1;
+  return 0;
 }
 
 module.exports = (options, loaderContext) => {
@@ -79,7 +90,7 @@ module.exports = (options, loaderContext) => {
     .forEach((member) => {
       let lastCategory = categories[categories.length - 1];
       if (!lastCategory || lastCategory.title !== member.category) {
-        lastCategory?.members.sort(sortMembersByDates);
+        lastCategory?.members.sort(sortMembers);
         categories.push({
           title: member.category,
           members: [member],
