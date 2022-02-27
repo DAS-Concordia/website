@@ -5,7 +5,6 @@ authors:
   name: Suhaib Mujahid
   title: Master's Student
   url: https://suhaib.ca
-  image_url: https://suhaib.ca/images/photo_180.jpg
 tags: [npm, trivial packages]
 ---
 

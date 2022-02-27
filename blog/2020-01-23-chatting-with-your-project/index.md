@@ -4,8 +4,7 @@ title: Chatting with your software project!
 authors:
   name: Ahmad Abdellatif
   title: PhD Student
-  url: http://das.encs.concordia.ca/members/ahmad-abdellatif/
-  image_url: http://das.encs.concordia.ca/uploads/Photo-small-1.jpg
+  url: /members/ahmad-abdellatif
 tags: [bot, chat, botse]
 ---
 
