@@ -69,7 +69,7 @@ function sortCategories(a, b) {
 
 function sortMembers(a, b) {
   if (a.role != b.role) {
-    return  rolesOrder[a.role] > rolesOrder[b.role] ? 1 : -1;
+    return rolesOrder[a.role] > rolesOrder[b.role] ? 1 : -1;
   }
   if (a.end_date > b.end_date) return -1;
   if (a.end_date < b.end_date) return 1;
@@ -90,7 +90,6 @@ module.exports = (options, loaderContext) => {
     .forEach((member) => {
       let lastCategory = categories[categories.length - 1];
       if (!lastCategory || lastCategory.title !== member.category) {
-        lastCategory?.members.sort(sortMembers);
         categories.push({
           title: member.category,
           members: [member],
@@ -100,7 +99,9 @@ module.exports = (options, loaderContext) => {
       }
     });
 
-  categories.sort(sortCategories);
+  categories
+    .sort(sortCategories)
+    .forEach((category) => category.members.sort(sortMembers));
 
   return { code: `module.exports = ${JSON.stringify(categories)}` };
 };
