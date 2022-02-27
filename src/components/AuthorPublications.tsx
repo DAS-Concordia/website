@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import CodeBlock from "@theme/CodeBlock";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { shortName } from "./Publications";
 
 function HighlightedAuthors({ list }) {
   const lastIndex = list.length - 1;
@@ -17,10 +18,10 @@ function HighlightedAuthors({ list }) {
           {index > 0 ? (index === lastIndex ? ", and " : ", ") : ""}
           {index == highlightIndex ? (
             <b>
-              {given[0]}. {family}
+              {shortName(given)} {family}
             </b>
           ) : (
-            `${given[0]}. ${family}`
+            `${shortName(given)} ${family}`
           )}
         </span>
       ))}

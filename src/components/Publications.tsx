@@ -8,6 +8,13 @@ import CodeBlock from "@theme/CodeBlock";
 import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import TOCInline from "@theme/TOCInline";
 
+export function shortName(firstName) {
+  return firstName
+    .split(" ")
+    .map((name) => name[0] + ".")
+    .join(" ");
+}
+
 function Authors({ list }) {
   const lastIndex = list.length - 1;
 
@@ -15,9 +22,9 @@ function Authors({ list }) {
     <p className={styles.authors}>
       {list.map(
         ({ given, family }, index) =>
-          `${index > 0 ? (index === lastIndex ? ", and " : ", ") : ""}${
-            given[0]
-          }. ${family}`
+          `${
+            index > 0 ? (index === lastIndex ? ", and " : ", ") : ""
+          }${shortName(given)} ${family}`
       )}
     </p>
   );
