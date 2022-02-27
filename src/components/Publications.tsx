@@ -12,7 +12,7 @@ function Authors({ list }) {
   const lastIndex = list.length - 1;
 
   return (
-    <p>
+    <p className={styles.authors}>
       {list.map(
         ({ given, family }, index) =>
           `${index > 0 ? (index === lastIndex ? ", and " : ", ") : ""}${
@@ -28,8 +28,8 @@ function Paper(paper) {
 
   return (
     <div className="card">
-      <div className="card__header">
-        <h4 className={styles.paperTitles}>{paper.title}</h4>
+      <div className={clsx("card__header", styles.paperHeader)}>
+        <h4>{paper.title}</h4>
       </div>
       <div className="card__body">
         <Authors list={paper.authors} />
