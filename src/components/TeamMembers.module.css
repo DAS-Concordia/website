@@ -8,14 +8,14 @@
   text-align: left;
 }
 
-.member a {
+.memberButtons a {
   color: var(--ifm-color-emphasis-700);
 }
 
-.member .website {
+.memberButtons  .website {
   padding: 0.25rem;
 }
 
-.member a:hover {
+.memberButtons  a:hover {
   text-decoration: none;
 }

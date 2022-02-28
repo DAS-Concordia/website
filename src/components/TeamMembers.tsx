@@ -17,8 +17,28 @@ function importProfilePicture(name: string) {
   }
 }
 
+const CurrentPosition = ({ title, institution, institution_url }) => {
+  if (!title && !institution) return null;
+
+  return (
+    <p className="margin-top--sm">
+      Currently{" "}
+      <b>
+        {title} at{" "}
+        {institution_url ? (
+          <a href={institution_url} target="_blank">
+            {institution}
+          </a>
+        ) : (
+          institution
+        )}
+      </b>
+    </p>
+  );
+};
+
 const SocialButtons = ({ id, twitter, linkedin, website, email, has_page }) => (
-  <ul className="pills">
+  <ul className={clsx("pills", styles.memberButtons)}>
     {has_page && (
       <li className={clsx("pills__item", styles.website)}>
         <a href={`/members/${id}`}>
@@ -57,7 +77,15 @@ const SocialButtons = ({ id, twitter, linkedin, website, email, has_page }) => (
   </ul>
 );
 
-const TeamMemberLarge = ({ id, name, role, imgURL, affiliation, ...props }) => {
+const TeamMemberLarge = ({
+  id,
+  name,
+  role,
+  imgURL,
+  affiliation,
+  position,
+  ...props
+}) => {
   return (
     <div
       className={clsx(
@@ -71,12 +99,10 @@ const TeamMemberLarge = ({ id, name, role, imgURL, affiliation, ...props }) => {
           <img src={imgURL || importProfilePicture(id)} alt={name} />
         </div>
         <div className="card__body">
-          <h3>
-            {name}
+          <h3 className="margin-bottom--none">{name}</h3>
+          <span>{role}</span>
 
-            {/* {role && <span className="badge badge--primary">{role}</span>} */}
-          </h3>
-          {role}
+          <CurrentPosition {...position} />
         </div>
         <div className="card__footer">
           <SocialButtons id={id} {...(props as any)} />
