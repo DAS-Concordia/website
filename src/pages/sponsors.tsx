@@ -38,6 +38,11 @@ export const InstitutionList = [
         log: require("../../logos/Motsai.png").default,
         url: "https://motsai.com",
       },
+      {
+        name: "Vercel",
+        log: require("../../logos/Vercel.png").default,
+        url: "https://vercel.com/?utm_source=das-lab&utm_campaign=oss",
+      },
     ],
   },
 ];
