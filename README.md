@@ -18,4 +18,4 @@ This command starts a local development server and opens up a browser window. Mo
 
 This website created by: [Suhaib Mujahid](https://github.com/suhaibmujahid)
 
-[![Powerd by Vercel](static/img/powered-by-vercel.svg)](https://vercel.com/?utm_source=se4ai&utm_campaign=oss)
+[![Powerd by Vercel](static/img/powered-by-vercel.svg)](https://vercel.com/?utm_source=das-lab&utm_campaign=oss)
