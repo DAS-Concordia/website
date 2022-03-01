@@ -6,7 +6,7 @@ import PageHeader from "../components/PageHeader";
 
 export const InstitutionList = [
   {
-    title: "The DAS lab is funded through support from:",
+    title: "",
     members: [
       {
         name: "The Faculty of Engineering and Computer Science at Concordia University",
@@ -39,9 +39,49 @@ export const InstitutionList = [
         url: "https://motsai.com",
       },
       {
+        name: "IBM",
+        log: require("../../logos/IBM.png").default,
+        url: "https://www.ibm.com/ca-en",
+      },
+      {
+        name: "TD Bank Group",
+        log: require("../../logos/TD.png").default,
+        url: "https://www.td.com/ca/en/",
+      },
+      {
+        name: "Airudi",
+        log: require("../../logos/Airudi.png").default,
+        url: "https://airudi.com/en/",
+      },
+      {
+        name: "IVADO",
+        log: require("../../logos/IVADO.png").default,
+        url: "https://ivado.ca/en/",
+      },
+      {
         name: "Vercel",
         log: require("../../logos/Vercel.png").default,
         url: "https://vercel.com/?utm_source=das-lab&utm_campaign=oss",
+      },
+    ],
+  },
+  {
+    title: "Universities",
+    members: [
+      {
+        name: "Polytechnique Montréal",
+        log: require("../../logos/PolyMTL.png").default,
+        url: "https://www.polymtl.ca/en/",
+      },
+      {
+        name: "Queen's University",
+        log: require("../../logos/Queens.png").default,
+        url: "https://www.queensu.ca",
+      },
+      {
+        name: "University of Alberta",
+        log: require("../../logos/Alberta.png").default,
+        url: "https://www.ualberta.ca",
       },
     ],
   },
@@ -50,8 +90,11 @@ export const InstitutionList = [
 export default function Partners() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title="Partners" description="The project's partners.">
-      <PageHeader title="Our Sponsors" />
+    <Layout
+      title="Partners"
+      description="The DAS Lab's sponsors and collaborates."
+    >
+      <PageHeader title="Our Sponsors and Collaborates" />
       <main>
         <Institutions list={InstitutionList} />
       </main>
