@@ -83,6 +83,41 @@ export const InstitutionList = [
         log: require("../../logos/Alberta.png").default,
         url: "https://www.ualberta.ca",
       },
+      {
+        name: "McGill University",
+        log: require("../../logos/McGill.png").default,
+        url: "https://www.mcgill.ca",
+      },
+      {
+        name: "Rochester Institute of Technology (RIT)",
+        log: require("../../logos/RIT.png").default,
+        url: "https://www.rit.edu",
+      },
+      {
+        name: "Monash University",
+        log: require("../../logos/Monash.png").default,
+        url: "https://www.monash.edu",
+      },
+      {
+        name: "Istanbul Technical University (ITU)",
+        log: require("../../logos/ITU.png").default,
+        url: "https://www.itu.edu.tr/en",
+      },
+      {
+        name: "Eindhoven University of Technology",
+        log: require("../../logos/TUe.png").default,
+        url: "https://www.tue.nl/en",
+      },
+      {
+        name: "Zhejiang University",
+        log: require("../../logos/Zhejiang.png").default,
+        url: "http://www.zju.edu.cn/english",
+      },
+      {
+        name: "Kyushu University",
+        log: require("../../logos/Kyushu.png").default,
+        url: "https://www.kyushu-u.ac.jp/en/",
+      },
     ],
   },
 ];
