@@ -1,0 +1,21 @@
+---
+title: Musfiqur Rahman
+role: PhD Student
+start_date: 2022-05
+end_date:
+website:
+linkedin: 
+scholar:
+twitter:
+---
+
+# Abbas Javan
+
+I am a PhD student at the Department of Computer Science and Software Engineering at Concordia University under Dr. Emad Shihab’s supervision. 
+
+## Publications
+
+import { AuthorPublications } from "../../components/AuthorPublications";
+
+<AuthorPublications firstname="Musfiqur" lastname="Rahman" />
+
