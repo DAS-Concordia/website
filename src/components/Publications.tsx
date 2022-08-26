@@ -5,7 +5,7 @@ import groupedPapers from "../data/publications-list.build";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
 import CodeBlock from "@theme/CodeBlock";
-import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import TOCInline from "@theme/TOCInline";
 
 export function shortName(firstName) {
@@ -51,6 +51,15 @@ function Paper(paper) {
           >
             <FontAwesomeIcon icon={faQuoteLeft} /> BibTeX
           </button>
+          {paper.data && (
+            <a
+              className="button button--outline button--sm button--secondary"
+              target="_blank"
+              href={paper.data}
+            >
+              <FontAwesomeIcon icon={faDatabase} /> Data
+            </a>
+          )}
           {paper.has_pdf && (
             <a
               className="button button--outline button--sm button--secondary"

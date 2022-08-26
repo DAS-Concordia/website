@@ -1,5 +1,6 @@
 const path = require("path");
 const fs = require("fs");
+const bibtexParse = require("@orcid/bibtex-parse-js");
 const { Cite } = require("@citation-js/core");
 require("@citation-js/plugin-bibtex");
 
@@ -32,8 +33,25 @@ function sortPapers(a, b) {
 function parseBibFile(filename) {
   const filepath = path.resolve(publicationsPath, filename);
   const content = fs.readFileSync(filepath, fileReadOpts);
+  papers = new Cite(content, citeOpts).get();
 
-  return new Cite(content, citeOpts).get();
+  // This is a workaround to access extra fields (i.e., data url). We could drop
+  // the dependency on "@citation-js/core" and only use "@orcid/bibtex-parse-js"
+  // instead. However, I'm not sure how stable it is.
+  extraFields = new Map();
+  bibtexParse.toJSON(content).forEach((paper) => {
+    console.log();
+    extraFields.set(paper.citationKey, paper.entryTags);
+  });
+
+  papers.forEach((paper) => {
+    extra = extraFields.get(paper.id);
+    if (extra) {
+      paper.data = extra.data;
+    }
+  });
+
+  return papers;
 }
 
 function groupPapersByYear(papers) {
@@ -68,6 +86,7 @@ function groupPapersByYear(papers) {
       title: paper.title,
       authors: paper.author,
       venue: paper["container-title"],
+      data: paper.data,
       bibtex: bibtex,
       has_pdf: has_pdf,
       year: year,
