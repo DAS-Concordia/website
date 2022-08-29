@@ -1,19 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import clsx from "clsx";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import useThemeContext from "@theme/hooks/useThemeContext";
 import styles from "./index.module.css";
-import HomepageFeatures, { NotesSection } from "../components/HomepageFeatures";
-import useGlobalData, { usePluginData } from "@docusaurus/useGlobalData";
 import logo from "../../static/img/logo.png";
-import { TwitterFeed, TwitterSection } from "../components/Twitter";
-import HomepageSectionTitle from "../components/HomepageSectionTitle";
+import { TwitterFeed } from "../components/Twitter";
 import HomeNotes from "./_home.mdx";
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx("hero hero--dark", styles.heroBanner)}>
       <div className="container">

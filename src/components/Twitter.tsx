@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import useThemeContext from "@theme/hooks/useThemeContext";
+import {useColorMode} from '@docusaurus/theme-common';
 import styles from "./Twitter.module.css";
 import HomepageSectionTitle from "./HomepageSectionTitle";
 
@@ -22,7 +22,7 @@ export const TwitterSection = () => {
 };
 
 export const TwitterFeed = ({ tweetLimit = 5, username, accountName }) => {
-  const { isDarkTheme } = useThemeContext();
+  const {colorMode} = useColorMode();
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -37,7 +37,7 @@ export const TwitterFeed = ({ tweetLimit = 5, username, accountName }) => {
       className="twitter-timeline"
       data-lang="en"
       data-chrome="noheader,nofooter,noborders"
-      data-theme={isDarkTheme ? "dark" : "light"}
+      data-theme={colorMode}
       data-tweet-limit={tweetLimit}
       href={`https://twitter.com/${username}?ref_src=twsrc%5Etfw`}
     >
