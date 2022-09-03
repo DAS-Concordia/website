@@ -9,13 +9,13 @@ const path = require("path");
 const config = {
   title: "DAS Lab",
   tagline: "Data-driven Analysis of Software Lab",
-  url: "https://das-concordia.github.io",
+  url: "https://das.encs.concordia.ca",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "DAS-Concordia", // Usually your GitHub org/user name.
-  projectName: "DAS-Concordia.github.io", // Usually your repo name.
+  projectName: "website", // Usually your repo name.
   trailingSlash: false,
 
   presets: [
