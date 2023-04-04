@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@citation-js/core": "^0.5.4",
-    "@citation-js/plugin-bibtex": "^0.5.6",
+    "@citation-js/plugin-bibtex": "^0.6.6",
     "@docusaurus/core": "^2.0.1",
     "@docusaurus/preset-classic": "^2.0.1",
     "@fortawesome/free-brands-svg-icons": "^6.0.0",
