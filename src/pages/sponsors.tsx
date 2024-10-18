@@ -62,6 +62,11 @@ export const InstitutionList = [
         name: "Vercel",
         log: require("../../logos/Vercel.png").default,
         url: "https://vercel.com/?utm_source=das-lab&utm_campaign=oss",
+      }, 
+      {
+        name: "Sandoz",
+        log: require("../../logos/sandoz_logo_sandoz.png").default,
+        url: "https://www.sandoz.ca/",
       },
     ],
   },
