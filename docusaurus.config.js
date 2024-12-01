@@ -28,8 +28,14 @@ const config = {
           editUrl: "https://github.com/DAS-Concordia/website/edit/main/",
         },
         blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/DAS-Concordia/website/edit/main/blog/",
+          path: './blog',
+          routeBasePath: 'blog',
+          // Base URL for the blog
+          showReadingTime: false,
+          editUrl: "https://github.com/DAS-Concordia/website/edit/main/blog",
+          postsPerPage: 1, // Disable pagination
+          include: ["**/*.md"],         // Includes all Markdown files
+
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -64,6 +70,12 @@ const config = {
           { to: "/publications", label: "Publications", position: "left" },
           { to: "/sponsors", label: "Sponsors", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/blog1", label: "Blog", position: "left" },
+          // { to: "/blog2", label: "Blog", position: "left" },
+          // { to: "/blog3", label: "Blog", position: "left" },
+
+
+
           { to: "/contact", label: "Contact Us", position: "right" },
         ],
       },
