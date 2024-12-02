@@ -1,7 +1,7 @@
 ---
 title: Taking the Guesswork Out of Code Reviews
 authors:
-  name: SayedHassan Khatoonabadi
+  name: Hassan Khatoonabadi
   title: Postdoctoral Researcher
   url: /members/hassan-khatoonabadi
 ---
