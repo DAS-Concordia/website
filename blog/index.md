@@ -2,7 +2,7 @@
 title: Blog
 slug: /
 ---
-
+ 
 # Blog
 
 import PullRequestAbandonment from "./2017/PullRequestAbandonment.jpg";
