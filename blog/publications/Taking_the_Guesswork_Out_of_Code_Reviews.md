@@ -15,17 +15,17 @@ What if we could take the guesswork out of the process? Imagine knowing when to 
 
 ### Cracking the Code on Response Times
 
-**We used machine learning to predict two things:**
+We used machine learning to predict two things:
 
- 1. How long it takes for a maintainer to respond to a PR.
+ **1. How long it takes for a maintainer to respond to a PR.**
 
- 2. How long it takes for a contributor to reply back.
+ **2. How long it takes for a contributor to reply back.**
 
 Why does this matter? When contributors know what to expect, they can plan better and stay motivated. Maintainers, on the other hand, can detect delays, offer support where needed, and prioritize their workload. The result? A faster, smoother review process for everyone.
 
  
 
-**So, How Did We Do It?**
+### So, How Did We Do It?
 
 We extracted 21 features spanning four key dimensions to model response times:
 
@@ -63,7 +63,7 @@ Here's how contributors can improve their chances of receiving quick feedback:
 
  
 
-**For maintainers, the following tips can make a big difference:**
+For maintainers, the following tips can make a big difference:
 
  1- **Respond Quickly:** Timely initial feedback can prevent delays from spiraling into a ripple effect that slows everything down.
 
@@ -85,4 +85,4 @@ Want to learn more? Check out our study, published in IEEE Transactions on Softw
 
  
 
-At the end of the day, PRs are more than just a bunch of code changes: They're a reflection of human collaboration and challenges. Let's connect and discuss how we can further enhance this process for our community.
+**At the end of the day, PRs are more than just a bunch of code changes: They're a reflection of human collaboration and challenges. Let's connect and discuss how we can further enhance this process for our community.**
