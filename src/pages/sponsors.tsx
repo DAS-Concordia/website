@@ -28,7 +28,7 @@ export const InstitutionList = [
         log: require("../../logos/Ericsson.png").default,
         url: "https://www.ericsson.com/en",
       },
-      {
+      { 
         name: "National Bank of Canada",
         log: require("../../logos/NBC.png").default,
         url: "https://www.nbc.ca",

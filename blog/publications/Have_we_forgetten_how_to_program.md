@@ -1,5 +1,4 @@
 ---
-slug: why-do-developers-use-trivial-packages-npm
 title: Have we forgotten how to program?
 authors:
   name: Suhaib Mujahid

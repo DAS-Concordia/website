@@ -39,3 +39,104 @@ h2.section {
 h2.section::first-letter {
   color: var(--ifm-color-primary-darker);
 }
+
+.SmallContainer>img{
+  max-width:170px ;
+  max-height:150px;
+  margin-right:20px;
+  
+  }
+  
+  @media screen and (max-width: 550px) {
+    .SmallContainer>img{    
+      display:flex;
+      /* max-height: '100%'; */
+      flex-wrap: 'wrap';
+  max-width:100% ;
+      /* border:2px solid violet; */
+    }}
+  
+  
+
+  .events {
+    max-height: 200px;
+    display: flex;
+    flex-direction: row;
+  }
+  @media screen and (max-width: 550px) {
+    .events {
+      display:flex;
+  flex-direction: column
+  ;  flex-wrap: 'wrap';
+  max-height:500px;
+    /* border:2px solid green; */
+    /* max-width: '350px' */
+  }
+  }
+    
+  .container{
+    /* border:2px solid red; */
+    margin-bottom: 35px;
+    margin-top:30px;
+    /* margin-top:20px; */
+
+  }
+
+  
+  .container_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Info-styles-module {
+    display: none;
+}
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module.thin-scrollbar {
+  display: none;
+}
+.tableOfContents_node_modules-\@docusaurus-theme-classic-lib-theme-TOC-styles-module.thin-scrollbar {
+  display: none;
+}
+.Blog{
+  margin-left:50px;
+}
+.card__image{
+  max-width: 338px;
+  height:300px;
+ /* height: 350px; */
+  /* border:2px solid orange; */
+
+  
+}
+.avatar__subtitle{
+  font-weight: normal;
+  font-size: 15px;
+}
+.image {
+  width:315px;
+  height:300px;
+
+}  
+.card{
+  /* border:2px solid red; */
+  /* height:900px; */
+}
+.pagination-nav.pagination-nav.docusaurus-mt-lg{
+  display: none;
+}
+.sidebar_re4s.thin-scrollbar{
+  display:none;
+
+}
+.col.col--3 {
+  /* display: none; */
+
+}
+.container_mt6G.margin-vert--md{
+  display :none;
+}
+nav.pagination-nav 
+{
+ display: none;
+}
+.pagination-nav.docusaurus-mt-lg-v && .pagination-nav__link.pagination-nav__link--prev && .pagination-nav__sublabel.pagination-nav__label  {
+ display: none;
+}
+/* .navbar-sidebar__item.menu:nth-of-type(1) {
+  display: none;
+} */

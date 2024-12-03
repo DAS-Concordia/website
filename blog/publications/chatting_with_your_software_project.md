@@ -1,5 +1,4 @@
 ---
-slug: chatting-with-your-software-project
 title: Chatting with your software project!
 authors:
   name: Ahmad Abdellatif
