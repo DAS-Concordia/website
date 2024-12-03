@@ -124,7 +124,7 @@ h2.section::first-letter {
 
 }
 .col.col--3 {
-  display: none;
+  /* display: none; */
 
 }
 .container_mt6G.margin-vert--md{
