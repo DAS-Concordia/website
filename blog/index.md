@@ -2,7 +2,7 @@
 title: Blog
 slug: /
 ---
- 
+
 # Blog
 
 import PullRequestAbandonment from "./PullRequestAbandonment.jpg";
@@ -10,12 +10,11 @@ import PullRequestAbandonment from "./PullRequestAbandonment.jpg";
 <div className="container">
   <h2>
     <a href="/blog/publications/Taking_the_Guesswork_Out_of_Code_Reviews">
-Taking the Guesswork Out of Code Reviews
-    </a>
+     Taking the Guesswork Out of Code Reviews  </a>
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
       <div className="avatar__name">
         <a itemprop="url" href="/members/hassan-khatoonabadi">
-          <span itemprop="name">S. Khatoonabadi</span>
+          <span itemprop="name">Hassan Khatoonabadi</span>
         </a>
       </div>
       <small className="avatar__subtitle" itemprop="description">
@@ -32,7 +31,7 @@ Taking the Guesswork Out of Code Reviews
       }
   }}>
     <div className="SmallContainer">
-      <img src={PullRequestAbandonment} alt="Pull Request Abandonment" />
+      <img src={PullRequestAbandonment} alt="Taking the Guesswork Out of Code Reviews" />
     </div>
 
   <div className="text">
@@ -98,7 +97,7 @@ import ahmadabdellatif from "./ahmadabdellatif.jpg";
 
 <div className="container">
   <h2>
-    <a href="/blog/publications/chatting_with_your_software_project">
+    <a href="/blog/publications/Chatting_with_your_software_project">
    Chatting with your software project!  </a>
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
       <div className="avatar__name">
@@ -127,12 +126,13 @@ import ahmadabdellatif from "./ahmadabdellatif.jpg";
 No matter where you stand in the software development food-chain, analyzing your software repository to get insights into your own project is part of the day-to-day business. Developers use the repository to identify (and blame!) the colleague that introduced that nasty piece of code, managers use the repository to get productivity metrics on their teams and everyone.
 
 
-<a  href="/blog/publications/chatting_with_your_software_project">
+<a  href="/blog/publications/Chatting_with_your_software_project">
   <strong> Read More</strong>
       </a>
     </div>
   </div>
 </div>
+
 
 
 
@@ -163,7 +163,7 @@ Have we forgotten how to program?  </a>
       }
   }}>
     <div className="SmallContainer">
-      <img src={suhaibmujahid} alt=" Chatting with your software project!" />
+      <img src={suhaibmujahid} alt=" Have we forgetten how to program" />
     </div>
 
   <div className="text">
