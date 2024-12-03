@@ -5,11 +5,11 @@ slug: /
  
 # Blog
 
-import PullRequestAbandonment from "./2017/PullRequestAbandonment.jpg";
+import PullRequestAbandonment from "./PullRequestAbandonment.jpg";
 
 <div className="container">
   <h2>
-    <a href="/blog/2017/event/Taking_the_Guesswork_Out_of_Code_Reviews">
+    <a href="/blog/publications/Taking_the_Guesswork_Out_of_Code_Reviews">
       Pull Request Abandonment in Open-Source Projects
     </a>
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
@@ -39,7 +39,7 @@ import PullRequestAbandonment from "./2017/PullRequestAbandonment.jpg";
       If you've ever contributed to a software project, you know that waiting for feedback on a Pull Request (PR) can be like watching paint dry. Contributors and maintainers both benefit when PRs are reviewed efficiently, but the waiting game often comes down to when, and how soon, responses happen. 
 
 
-<a  href="/blog/2017/event/Taking_the_Guesswork_Out_of_Code_Reviews">
+<a  href="/blog/publications/Taking_the_Guesswork_Out_of_Code_Reviews">
   <strong> Read More</strong>
       </a>
     </div>
@@ -49,12 +49,12 @@ import PullRequestAbandonment from "./2017/PullRequestAbandonment.jpg";
 
 
 
-import JasmineLatendresse from "./2017/JasmineLatendresse.png";
+import JasmineLatendresse from "./JasmineLatendresse.png";
 
 
 <div className="container">
   <h2>
-    <a href="/blog/2017/event/Managing_Your_Machine_Learning_Models">
+    <a href="/blog/publications/Managing_Your_Machine_Learning_Models">
      Managing Your Machine Learning Models - What’s Inside?  </a>
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
       <div className="avatar__name">
@@ -83,7 +83,7 @@ import JasmineLatendresse from "./2017/JasmineLatendresse.png";
       In today's world of artificial intelligence and machine learning, keeping ML models organized and running efficiently is crucial. Yet, it’s not always straightforward. Imagine constantly adjusting your model as data changes, handling unexpected bugs, or ensuring it works seamlessly in different environments. There is a lot going on under the hood! This study dives into the core activities and hurdles of managing ML models effectively and presents a practical guide for ML professionals. 
 
 
-<a  href="/blog/2017/event/Managing_Your_Machine_Learning_Models">
+<a  href="/blog/publications/Managing_Your_Machine_Learning_Models">
   <strong> Read More</strong>
       </a>
     </div>
@@ -93,12 +93,12 @@ import JasmineLatendresse from "./2017/JasmineLatendresse.png";
 
 
 
-import ahmadabdellatif from "./2017/ahmadabdellatif.jpg";
+import ahmadabdellatif from "./ahmadabdellatif.jpg";
 
 
 <div className="container">
   <h2>
-    <a href="/blog/2017/event/chatting_with_your_software_project">
+    <a href="/blog/publications/chatting_with_your_software_project">
    Chatting with your software project!  </a>
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
       <div className="avatar__name">
@@ -127,7 +127,7 @@ import ahmadabdellatif from "./2017/ahmadabdellatif.jpg";
 No matter where you stand in the software development food-chain, analyzing your software repository to get insights into your own project is part of the day-to-day business. Developers use the repository to identify (and blame!) the colleague that introduced that nasty piece of code, managers use the repository to get productivity metrics on their teams and everyone.
 
 
-<a  href="/blog/2017/event/chatting_with_your_software_project">
+<a  href="/blog/publications/chatting_with_your_software_project">
   <strong> Read More</strong>
       </a>
     </div>
@@ -136,12 +136,12 @@ No matter where you stand in the software development food-chain, analyzing your
 
 
 
-import suhaibmujahid from "./2017/suhaibmujahid.jpg";
+import suhaibmujahid from "./suhaibmujahid.jpg";
 
 
 <div className="container">
   <h2>
-    <a href="/blog/2017/event/Have_we_forgetten_how_to_program">
+    <a href="/blog/publications/Have_we_forgetten_how_to_program">
 Have we forgotten how to program?  </a>
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
       <div className="avatar__name">
@@ -169,7 +169,7 @@ Have we forgotten how to program?  </a>
   <div className="text">
 After the <a href="https://www.npmjs.com/package/left-pad">left-pad</a> fiasco, David Haney’s blog post: “Have We Forgotten How to Program?”, lead to many heated discussions whether developers should take on dependencies for simple tasks. You can read the <a href="http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/">post</a> and the discussion that ensued for all the details, but to summarize it – a dependency on an 11 line package that implements a left padding string function was removed; this package was used by Babel.
 
-<a  href="/blog/2017/event/Have_we_forgetten_how_to_program">
+<a  href="/blog/publications/Have_we_forgetten_how_to_program">
   <strong> Read More</strong>
       </a>
     </div>
