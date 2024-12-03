@@ -114,8 +114,29 @@ h2.section::first-letter {
 }  
 .card{
   /* border:2px solid red; */
-  height:900px;
+  /* height:900px; */
 }
 .pagination-nav.pagination-nav.docusaurus-mt-lg{
   display: none;
 }
+.sidebar_re4s.thin-scrollbar{
+  display:none;
+
+}
+.col.col--3 {
+  display: none;
+
+}
+.container_mt6G.margin-vert--md{
+  display :none;
+}
+nav.pagination-nav 
+{
+ display: none;
+}
+.pagination-nav.docusaurus-mt-lg-v && .pagination-nav__link.pagination-nav__link--prev && .pagination-nav__sublabel.pagination-nav__label  {
+ display: none;
+}
+/* .navbar-sidebar__item.menu:nth-of-type(1) {
+  display: none;
+} */
