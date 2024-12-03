@@ -10,7 +10,7 @@ import PullRequestAbandonment from "./PullRequestAbandonment.jpg";
 <div className="container">
   <h2>
     <a href="/blog/publications/Taking_the_Guesswork_Out_of_Code_Reviews">
-      Pull Request Abandonment in Open-Source Projects
+Taking the Guesswork Out of Code Reviews
     </a>
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
       <div className="avatar__name">
