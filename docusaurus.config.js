@@ -35,6 +35,7 @@ const config = {
           editUrl: "https://github.com/DAS-Concordia/website/edit/main/blog",
           postsPerPage: 1, // Disable pagination
           include: ["**/*.md"],         // Includes all Markdown files
+          blogSidebarCount:0
 
         },
         theme: {
