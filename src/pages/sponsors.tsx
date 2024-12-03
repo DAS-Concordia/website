@@ -65,7 +65,7 @@ export const InstitutionList = [
       }, 
       {
         name: "Sandoz",
-        log: require("../../logos/sandoz_logo_sandoz.png").default,
+        log: require("../../logos/Sandoz.png").default,
         url: "https://www.sandoz.ca/",
       },
     ],
