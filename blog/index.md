@@ -163,11 +163,7 @@ Have we forgotten how to program?  </a>
       }
   }}>
     <div className="SmallContainer">
-<<<<<<< HEAD
       <img src={program} alt=" Have we forgotten how to program?" />
-=======
-      <img src={suhaibmujahid} alt=" Have we forgetten how to program" />
->>>>>>> e78d872bfef5317b546a60ace9cdb832f6f6fd51
     </div>
 
   <div className="text">
