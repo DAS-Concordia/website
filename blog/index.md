@@ -5,7 +5,7 @@ slug: /
  
 # Blog
 
-import PullRequestAbandonment from "./PullRequestAbandonment.jpg";
+import Pull_Requests from "./Pull_Requests.jpg";
 
 <div className="container">
   <h2>
@@ -32,7 +32,7 @@ Taking the Guesswork Out of Code Reviews
       }
   }}>
     <div className="SmallContainer">
-      <img src={PullRequestAbandonment} alt="Pull Request Abandonment" />
+      <img src={Pull_Requests} alt="Pull Request Abandonment" />
     </div>
 
   <div className="text">
@@ -49,7 +49,7 @@ Taking the Guesswork Out of Code Reviews
 
 
 
-import JasmineLatendresse from "./JasmineLatendresse.png";
+import An_Exploratory_Study_on_Machine_Learning_Model_Management from "./An_Exploratory_Study_on_Machine_Learning_Model_Management.jpg";
 
 
 <div className="container">
@@ -76,7 +76,7 @@ import JasmineLatendresse from "./JasmineLatendresse.png";
       }
   }}>
     <div className="SmallContainer">
-      <img src={JasmineLatendresse} alt="  Managing Your Machine Learning Models" />
+      <img src={An_Exploratory_Study_on_Machine_Learning_Model_Management} alt="  Managing Your Machine Learning Models" />
     </div>
 
   <div className="text">
@@ -93,7 +93,7 @@ import JasmineLatendresse from "./JasmineLatendresse.png";
 
 
 
-import ahmadabdellatif from "./ahmadabdellatif.jpg";
+import Chatting_with_your_software_project from "./Chatting_with_your_software_project.jpg";
 
 
 <div className="container">
@@ -120,7 +120,7 @@ import ahmadabdellatif from "./ahmadabdellatif.jpg";
       }
   }}>
     <div className="SmallContainer">
-      <img src={ahmadabdellatif} alt=" Chatting with your software project!" />
+      <img src={Chatting_with_your_software_project} alt=" Chatting with your software project!" />
     </div>
 
   <div className="text">
@@ -136,7 +136,7 @@ No matter where you stand in the software development food-chain, analyzing your
 
 
 
-import suhaibmujahid from "./suhaibmujahid.jpg";
+import program from "./Have-we-forgotten-how-to-program.jpg";
 
 
 <div className="container">
@@ -163,7 +163,7 @@ Have we forgotten how to program?  </a>
       }
   }}>
     <div className="SmallContainer">
-      <img src={suhaibmujahid} alt=" Chatting with your software project!" />
+      <img src={program} alt=" Have we forgotten how to program?" />
     </div>
 
   <div className="text">
