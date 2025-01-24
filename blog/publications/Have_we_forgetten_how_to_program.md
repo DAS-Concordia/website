@@ -6,6 +6,7 @@ authors:
   url: https://suhaib.ca
 tags: [npm, trivial packages]
 ---
+<h2>Have we forgotten how to program?</h2>
 
 After the [left-pad](https://www.npmjs.com/package/left-pad) fiasco, David Haney’s blog post: “Have We Forgotten How to Program?”, lead to many heated discussions whether developers should take on dependencies for simple tasks. You can read the [post](http://www.haneycodes.net/npm-left-pad-have-we-forgotten-how-to-program/) and the discussion that ensued for all the details, but to summarize it – a dependency on an 11 line package that implements a left padding string function was removed; this package was used by Babel, which is used by some of the largest Internet sites, e.g., Facebook, Netflix, and Airbnb. While the real reason for the left-pad incident was that npm allowed authors to unpublish packages (a problem which has been resolved), it raised awareness of the broader issue of taking on dependencies for trivial tasks that can be easily implemented.
 

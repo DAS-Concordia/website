@@ -1,19 +1,12 @@
 ---
 title: Taking the Guesswork Out of Code Reviews
 authors:
-<<<<<<< HEAD
-<<<<<<< HEAD
   name: S. Khatoonabadi
-=======
-  name: Hassan Khatoonabadi
->>>>>>> e78d872bfef5317b546a60ace9cdb832f6f6fd51
-=======
-  name: Hassan Khatoonabadi
->>>>>>> b0ea541723ad67fcd46c57239f648bec13de2e04
   title: Postdoctoral Researcher
   url: /members/hassan-khatoonabadi
 ---
 
+<h2>Taking the Guesswork Out of Code Reviews </h2>
 
 Have you ever submitted a pull request (PR) and found yourself checking for an update like you're tracking a package that won't budge? We've all been there—that limbo where anticipation meets frustration. Meanwhile, maintainers are staring at a pile of PRs, trying to figure out which ones need their attention and support. 
 
@@ -23,41 +16,21 @@ What if we could take the guesswork out of the process? Imagine knowing when to 
 
 ### Cracking the Code on Response Times
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**We used machine learning to predict two things:**
-=======
+
 We used machine learning to predict two things:
->>>>>>> b0ea541723ad67fcd46c57239f648bec13de2e04
+
 
  **1. How long it takes for a maintainer to respond to a PR.**
 
-<<<<<<< HEAD
  2. How long it takes for a contributor to reply back.
-=======
-We used machine learning to predict two things:
 
- **1. How long it takes for a maintainer to respond to a PR.**
 
- **2. How long it takes for a contributor to reply back.**
->>>>>>> e78d872bfef5317b546a60ace9cdb832f6f6fd51
-=======
- **2. How long it takes for a contributor to reply back.**
->>>>>>> b0ea541723ad67fcd46c57239f648bec13de2e04
 
 Why does this matter? When contributors know what to expect, they can plan better and stay motivated. Maintainers, on the other hand, can detect delays, offer support where needed, and prioritize their workload. The result? A faster, smoother review process for everyone.
 
  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 **So, How Did We Do It?**
-=======
-### So, How Did We Do It?
->>>>>>> e78d872bfef5317b546a60ace9cdb832f6f6fd51
-=======
-### So, How Did We Do It?
->>>>>>> b0ea541723ad67fcd46c57239f648bec13de2e04
 
 We extracted 21 features spanning four key dimensions to model response times:
 
@@ -95,15 +68,9 @@ Here's how contributors can improve their chances of receiving quick feedback:
 
  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**For maintainers, the following tips can make a big difference:**
-=======
+
 For maintainers, the following tips can make a big difference:
->>>>>>> e78d872bfef5317b546a60ace9cdb832f6f6fd51
-=======
-For maintainers, the following tips can make a big difference:
->>>>>>> b0ea541723ad67fcd46c57239f648bec13de2e04
+
 
  1- **Respond Quickly:** Timely initial feedback can prevent delays from spiraling into a ripple effect that slows everything down.
 
@@ -125,12 +92,6 @@ Want to learn more? Check out our study, published in IEEE Transactions on Softw
 
  
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 At the end of the day, PRs are more than just a bunch of code changes: They're a reflection of human collaboration and challenges. Let's connect and discuss how we can further enhance this process for our community.
-=======
-**At the end of the day, PRs are more than just a bunch of code changes: They're a reflection of human collaboration and challenges. Let's connect and discuss how we can further enhance this process for our community.**
->>>>>>> e78d872bfef5317b546a60ace9cdb832f6f6fd51
-=======
-**At the end of the day, PRs are more than just a bunch of code changes: They're a reflection of human collaboration and challenges. Let's connect and discuss how we can further enhance this process for our community.**
->>>>>>> b0ea541723ad67fcd46c57239f648bec13de2e04
+

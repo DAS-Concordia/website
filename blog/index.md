@@ -2,7 +2,7 @@
 title: Blog
 slug: /
 ---
- 
+
 # Blog
 
 import Pull_Requests from "./Pull_Requests.jpg";
@@ -14,7 +14,7 @@ import Pull_Requests from "./Pull_Requests.jpg";
     <div className="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
       <div className="avatar__name">
         <a itemprop="url" href="/members/hassan-khatoonabadi">
-          <span itemprop="name">Hassan Khatoonabadi</span>
+          <span itemprop="name">S. Khatoonabadi</span>
         </a>
       </div>
       <small className="avatar__subtitle" itemprop="description">
