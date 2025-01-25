@@ -1,7 +1,7 @@
 ---
 title: Taking the Guesswork Out of Code Reviews
 authors:
-  name: S. Khatoonabadi
+  name: Hassan Khatoonabadi
   title: Postdoctoral Researcher
   url: /members/hassan-khatoonabadi
 ---
@@ -22,7 +22,7 @@ We used machine learning to predict two things:
 
  **1. How long it takes for a maintainer to respond to a PR.**
 
- 2. How long it takes for a contributor to reply back.
+ **2. How long it takes for a contributor to reply back.**
 
 
 
@@ -30,7 +30,7 @@ Why does this matter? When contributors know what to expect, they can plan bette
 
  
 
-**So, How Did We Do It?**
+### So, How Did We Do It?
 
 We extracted 21 features spanning four key dimensions to model response times:
 
@@ -93,5 +93,4 @@ Want to learn more? Check out our study, published in IEEE Transactions on Softw
  
 
 
-At the end of the day, PRs are more than just a bunch of code changes: They're a reflection of human collaboration and challenges. Let's connect and discuss how we can further enhance this process for our community.
-
+**At the end of the day, PRs are more than just a bunch of code changes: They're a reflection of human collaboration and challenges. Let's connect and discuss how we can further enhance this process for our community.**
