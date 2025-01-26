@@ -93,7 +93,9 @@ h2.section::first-letter {
   display: none;
 }
 .Blog{
-  margin-left:50px;
+  display: none;
+
+  /* margin-left:50px; */
 }
 .card__image{
   max-width: 338px;
@@ -101,8 +103,13 @@ h2.section::first-letter {
  /* height: 350px; */
   /* border:2px solid orange; */
 
-  
+
 }
+header{
+  display:none;
+}
+
+
 .avatar__subtitle{
   font-weight: normal;
   font-size: 15px;
