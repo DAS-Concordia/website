@@ -66,7 +66,11 @@ const blogPosts = [
 
 const BlogPage: React.FC = () => {
   return (
+<<<<<<< HEAD
     <div className={styles.blogContainer}>
+=======
+
+>>>>>>> change-blog-page
     <div className="container">
      {blogPosts.map((post) => (
         <div key={post.title} className={styles.container} >
@@ -89,6 +93,11 @@ const BlogPage: React.FC = () => {
           </a></p>
          </div></div>
     
+<<<<<<< HEAD
+=======
+    </div>
+      ))}
+>>>>>>> change-blog-page
     </div>
       ))}
     </div></div>
