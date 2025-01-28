@@ -39,14 +39,10 @@
 }
 @media screen and (max-width: 1400px) {
   .blogContainer{
-    margin-left:10px;
+/*     margin-left:10px; */
   }
   }
-  @media screen and (min-width: 1401px) {
-    .blogContainer {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
-    }
-  }
+
 .blogPost {
 
   /* margin-bottom: 35px;
