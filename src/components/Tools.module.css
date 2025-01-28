@@ -1,0 +1,98 @@
+.toolCreator{
+ 
+/* border:2px solid red; */
+margin-bottom: 0;
+}
+
+.toolCard {
+
+  /* border:2px solid red; */
+  margin-bottom: 20px; 
+  /* Add some spacing between cards */
+  padding: 15px; 
+  border-radius: 8px; /* Optional: Rounded corners */
+}
+.toolImageContainer{
+  /* border:2px solid green; */
+  width: 100%; /* Ensure full width within the parent container */
+  max-width: 100px; /* Adjust to your preference */
+  height: 100px; /* Set a consistent height */
+}
+.toolImageContainer> img{
+  width:100%;
+  height:100%;
+  
+    }
+.toolContentContainer{
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+
+  /* padding: 15px;  */
+  /* border:2px solid blue; */
+  width:100%;
+    justify-content: space-between;
+}
+
+.toolsHeader {
+  background-color: var(--ifm-color-emphasis-200);
+  padding-bottom: 1rem !important;
+}
+
+.toolsHeader h4 {
+  font-size: var(--ifm-h3-font-size);
+}
+.toolImage {
+  /* max-width: 100%; */
+  /* height: auto; */
+  /* border-radius: 8px; */
+   /* Optional: Image corners */
+}
+
+.toolContent {
+  /* border:2px solid rgb(128, 0, 126); */
+
+  /* flex: 1; */
+  display :flex; 
+  flex-direction: row;
+  padding-left: 20px; /* Add space between image and content */
+}
+.card{
+  /* border:5px solid orange; */
+  margin-bottom: 30px;
+}
+.toolbox{
+  /* border:5px solid green; */
+  display :flex; 
+  padding:var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing);
+
+  flex-direction: row;
+  flex-wrap: wrap;
+width:100%;
+  /* padding:var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing); */
+  /* justify-content: space-between; */
+/* width:100%; */
+
+}
+.floatButtons{
+flex:1;
+/* border:2px solid red; */
+height:50%;
+vertical-align: center;
+  /* Align buttons to the right */
+  /* margin-right: auto;   */
+/* border:2px solid red; */
+/* gap: 10px; */
+}
+.name{
+  /* padding-left:20px; */
+  width:82%;
+/* border:2px solid rgb(25, 0, 255); */
+/* gap:50; */
+/* Pushes the text to the left */
+
+}
+.cardbody{
+  /* border:2px solid orange; */
+  width:100%;
+}

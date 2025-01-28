@@ -71,8 +71,9 @@ const config = {
           { to: "/publications", label: "Publications", position: "left" },
           { to: "/sponsors", label: "Sponsors", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
-          // { to: "/tools", label: "Tools", position: "left" },
+          { to: "/tools", label: "Tools", position: "left" },
        
+
 
 
 
