@@ -63,10 +63,9 @@ const blogPosts: BlogPost[] = [
 const BlogPage: React.FC = () => {
   return (
     <div className={styles.blogContainer}>
-      {blogPosts.map((post, index) => (
-        <>
+     {blogPosts.map((post) => (
+        <div key={post.title} className={styles.container}>
       
-         <div key={index} className={styles.container}>
        <div className={styles.title}>
           <h2><a href={post.postUrl}>{post.title}</a></h2>
           <a href={post.authorUrl} className={styles.authorName}>
@@ -90,8 +89,8 @@ const BlogPage: React.FC = () => {
             Read More
           </a></p>
          </div></div>
-          
-         </div></>
+          </div>
+    
       ))}
     </div>
   );
