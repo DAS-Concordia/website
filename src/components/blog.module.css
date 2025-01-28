@@ -30,8 +30,7 @@
   flex-direction: column;
   display: grid;
 
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto-fill grid columns */
-  gap: 40px; /* Space between grid items */
+  grid-template-columns: repeat(1, 1fr);  gap: 40px; /* Space between grid items */
   margin-left: auto;
   margin-right: auto;
   max-width: 1200px; 
