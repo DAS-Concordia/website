@@ -72,6 +72,7 @@ const config = {
           { to: "/sponsors", label: "Sponsors", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/tools", label: "Tools", position: "left" },
+
        
 
 
