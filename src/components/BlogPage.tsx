@@ -90,8 +90,8 @@ const BlogPage: React.FC = () => {
             Read More
           </a></p>
          </div></div>
-          </div>
-    </div></div>
+       </div>
+    </div>
       ))}
     </div>
     
