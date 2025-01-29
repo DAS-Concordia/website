@@ -62,8 +62,8 @@ const blogPosts: BlogPost[] = [
 
 const BlogPage: React.FC = () => {
   return (
-        <div className={styles.blogContainer}>
-    <div className="col--3">
+        // <div className={styles.blogContainer}>
+    <div className="col">
      {blogPosts.map((post) => (
         <div key={post.title} className={styles.container}>
       
@@ -93,7 +93,8 @@ const BlogPage: React.FC = () => {
           </div>
     
       ))}
-    </div></div>
+    </div>
+    // </div>
   );
 };
 
