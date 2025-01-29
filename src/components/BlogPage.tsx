@@ -92,9 +92,9 @@ const BlogPage: React.FC = () => {
           </a></p>
          </div></div>
           </div>
-    </div>
+    </div></div>
       ))}
-    </div></div></div>
+    </div></div>
  
   );
 };
