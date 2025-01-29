@@ -30,9 +30,9 @@
   flex-direction: column;
   display: grid;
 
-  grid-template-columns: repeat(1, 1fr);  gap: 30px; /* Space between grid items */
-  margin-left: 2%;
-/*   margin-right: auto;
+  grid-template-columns: repeat(1, 1fr);  gap: 10px; /* Space between grid items */
+/*   margin-left: 2%;
+/*   margin-right: auto; */
   max-width: 1700px;  */
   margin-top:30px;
   /* border:2px solid blue; */
