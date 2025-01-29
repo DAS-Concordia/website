@@ -10,15 +10,8 @@ export default function Members() {
   return (
     <Layout title="Tools" description="The labs's tools.">
       <PageHeader title="Tools " />
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       <main> 
-=======
-      <main>
->>>>>>> 0147c99 (Add tools page link)
-=======
-      <main> 
->>>>>>> 4263355 (Add tools page link)
         
       <Tools />
       </main>
