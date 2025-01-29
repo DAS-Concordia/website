@@ -3,10 +3,11 @@ import React from "react";
 import clsx from "clsx";
 
 import styles from "./blog.module.css";
-import codereviewImage from "../images/Blog/codereview.jpg";
-import MachinelearningImage from "../images/Blog/Machinelearning.jpg";
-import chattingsoftwareprojectImage from "../images/Blog/chattingsoftwareproject.jpg";
-import haveyouforgettenImage from "../images/Blog/haveyouforgetten.jpg";
+// Use require() for production compatibility
+const codereviewImage = require("../images/Blog/codereview.jpg").default;
+const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").default;
+const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
+const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default
 
 // interface BlogPost {
 //   title: string;
@@ -14,10 +15,11 @@ import haveyouforgettenImage from "../images/Blog/haveyouforgetten.jpg";
 //   authorUrl: string;
 //   authorRole: string;
 //   description: string;
+  
 //   postUrl: string;
 // }
 
-const blogPosts: BlogPost[] = [
+const blogPosts = [
   {
     title: "Taking the Guesswork Out of Code Reviews",
     authorName: "Hassan Khatoonabadi",
@@ -62,11 +64,10 @@ const blogPosts: BlogPost[] = [
 
 const BlogPage: React.FC = () => {
   return (
-   
-        <div className={styles.blogContainer}>
-         
+    // <div className="card">
+
+    <div className={styles.blogContainer}>
      {blogPosts.map((post) => (
-          <div className="card__body">
         <div key={post.title} className={styles.container}>
       
        <div className={styles.title}>
@@ -78,7 +79,13 @@ const BlogPage: React.FC = () => {
           </div>
           
 
-         <div className={styles.events} >
+         <div className={styles.events} style={{
+      '@media screen and (max-width: 966px)': {
+          maxHeight: '100%',
+          flexWrap: 'wrap',
+          maxWidth: '350px'
+      }
+  }}>
          <div className={styles.imageContainer}>
           <img src={post.image} alt={post.authorName}/></div>
           <div className={styles.text}>
