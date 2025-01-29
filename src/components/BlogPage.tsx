@@ -1,14 +1,12 @@
 // BlogPage.tsx
 import React from "react";
-import { useEffect } from "react";
 import clsx from "clsx";
 
 import styles from "./blog.module.css";
-// Use require() for production compatibility
-const codereviewImage = require("../images/Blog/codereview.jpg").default;
-const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").default;
-const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
-const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default
+import codereviewImage from "../images/Blog/codereview.jpg";
+import MachinelearningImage from "../images/Blog/Machinelearning.jpg";
+import chattingsoftwareprojectImage from "../images/Blog/chattingsoftwareproject.jpg";
+import haveyouforgettenImage from "../images/Blog/haveyouforgetten.jpg";
 
 interface BlogPost {
   title: string;
@@ -20,8 +18,7 @@ interface BlogPost {
   image: string;
 }
 
-
-const blogPosts = [
+const blogPosts: BlogPost[] = [
   {
     title: "Taking the Guesswork Out of Code Reviews",
     authorName: "Hassan Khatoonabadi",
@@ -35,7 +32,7 @@ const blogPosts = [
   {
     title: "Managing Your Machine Learning Models - What’s Inside?",
     authorName: "Jasmine Latendresse",
-    image:MachinelearningImage,
+    image: MachinelearningImage,
     authorUrl: "/members/jasmine-latendresse",
     authorRole: "PhD Student",
     description:
@@ -55,7 +52,7 @@ const blogPosts = [
   {
     title: "Have We Forgotten How to Program?",
     authorName: "Suhaib Mujahid",
-    image:haveyouforgettenImage,
+    image: haveyouforgettenImage,
     authorUrl: "https://suhaib.ca",
     authorRole: "Master's Student",
     description:
@@ -64,44 +61,38 @@ const blogPosts = [
   },
 ];
 
-const BlogPage: React.FC = () => {
+function BlogPage() {
   return (
-<<<<<<< HEAD
-    <div className={styles.blogContainer}>
-=======
-
->>>>>>> change-blog-page
     <div className="container">
-     {blogPosts.map((post) => (
-        <div key={post.title} className={styles.container} >
-      
-       <div className={styles.title}>
-          <h2><a href={post.postUrl}>{post.title}</a></h2>
-          <a href={post.authorUrl} className={styles.authorName}>
+      {blogPosts.map((post) => (
+        <div key={post.title} className={clsx(styles.container, "blog-post-container")}>
+          <div className={clsx(styles.title, "blog-post-title")}>
+            <h2>
+              <a href={post.postUrl}>{post.title}</a>
+            </h2>
+            <a href={post.authorUrl} className={clsx(styles.authorName, "author-link")}>
               {post.authorName}
             </a>
-            <div className={styles.avatar__subtitle}>{post.authorRole}</div>
+            <div className={clsx(styles.avatar__subtitle, "author-role")}>{post.authorRole}</div>
           </div>
-          
 
-         <div className={styles.events} >
-         <div className={styles.imageContainer}>
-          <img src={post.image} alt={post.authorName}/></div>
-          <div className={styles.text}>
-          <p className={styles.description}>{post.description} <a href={post.postUrl} className={styles.readMore}>
-            Read More
-          </a></p>
-         </div></div>
-    
-<<<<<<< HEAD
-=======
-    </div>
+          <div className={clsx(styles.events, "responsive-events")}>
+            <div className={styles.imageContainer}>
+              <img src={post.image} alt={post.authorName} />
+            </div>
+            <div className={clsx(styles.text, "text-description")}>
+              <p className={clsx(styles.description, "description-text")}>
+                {post.description}{" "}
+                <a href={post.postUrl} className={clsx(styles.readMore, "read-more-link")}>
+                  Read More
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       ))}
->>>>>>> change-blog-page
     </div>
-      ))}
-    </div></div>
   );
-};
+}
 
 export default BlogPage;
