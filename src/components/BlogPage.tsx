@@ -9,6 +9,18 @@ const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").defau
 const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default
 
+interface BlogPost {
+  title: string;
+  authorName: string;
+  authorUrl: string;
+  authorRole: string;
+  description: string;
+  postUrl: string;
+  image: string;
+}
+
+
+
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -64,8 +76,6 @@ const blogPosts = [
 
 const BlogPage: React.FC = () => {
   return (
-    // <div className="card">
-
     <div className={styles.blogContainer}>
      {blogPosts.map((post) => (
         <div key={post.title} className={styles.container} >
@@ -87,8 +97,8 @@ const BlogPage: React.FC = () => {
             Read More
           </a></p>
          </div></div>
-          </div>
     
+    </div></div>
       ))}
     </div>
   );
