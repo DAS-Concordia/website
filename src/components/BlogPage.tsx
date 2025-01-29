@@ -64,7 +64,7 @@ const BlogPage: React.FC = () => {
   return (
         <div className={styles.blogContainer}>
      {blogPosts.map((post) => (
-         <div className="col col-lg">
+        
         <div key={post.title} className={styles.container}>
       
        <div className={styles.title}>
@@ -76,13 +76,7 @@ const BlogPage: React.FC = () => {
           </div>
           
 
-         <div className={styles.events} style={{
-      '@media screen and (max-width: 966px)': {
-          maxHeight: '100%',
-          flexWrap: 'wrap',
-          maxWidth: '350px'
-      }
-  }}>
+         <div className={styles.events} >
          <div className={styles.imageContainer}>
           <img src={post.image} alt={post.authorName}/></div>
           <div className={styles.text}>
@@ -90,7 +84,7 @@ const BlogPage: React.FC = () => {
             Read More
           </a></p>
          </div></div>
-       </div>
+    
     </div>
       ))}
     </div>
