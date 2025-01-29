@@ -67,7 +67,7 @@ const blogPosts: BlogPost[] = [
 const BlogPage: React.FC = () => {
   return (
 
-    <div className={styles.blogContainer}>
+    <div className="container">
      {blogPosts.map((post) => (
         <div key={post.title} className={styles.container}>
       
