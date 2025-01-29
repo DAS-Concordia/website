@@ -18,9 +18,6 @@ interface BlogPost {
   image: string;
 }
 
-
-
-
 const blogPosts: BlogPost[] = [
   {
     title: "Taking the Guesswork Out of Code Reviews",
@@ -35,7 +32,7 @@ const blogPosts: BlogPost[] = [
   {
     title: "Managing Your Machine Learning Models - What’s Inside?",
     authorName: "Jasmine Latendresse",
-    image:MachinelearningImage,
+    image: MachinelearningImage,
     authorUrl: "/members/jasmine-latendresse",
     authorRole: "PhD Student",
     description:
@@ -55,7 +52,7 @@ const blogPosts: BlogPost[] = [
   {
     title: "Have We Forgotten How to Program?",
     authorName: "Suhaib Mujahid",
-    image:haveyouforgettenImage,
+    image: haveyouforgettenImage,
     authorUrl: "https://suhaib.ca",
     authorRole: "Master's Student",
     description:
@@ -64,41 +61,38 @@ const blogPosts: BlogPost[] = [
   },
 ];
 
-const BlogPage: React.FC = () => {
+function BlogPage() {
   return (
-
     <div className="container">
-     {blogPosts.map((post) => (
-        <div key={post.title} className={styles.container}>
-      
-       <div className={styles.title}>
-          <h2><a href={post.postUrl}>{post.title}</a></h2>
-          <a href={post.authorUrl} className={styles.authorName}>
+      {blogPosts.map((post) => (
+        <div key={post.title} className={clsx(styles.container, "blog-post-container")}>
+          <div className={clsx(styles.title, "blog-post-title")}>
+            <h2>
+              <a href={post.postUrl}>{post.title}</a>
+            </h2>
+            <a href={post.authorUrl} className={clsx(styles.authorName, "author-link")}>
               {post.authorName}
             </a>
-            <div className={styles.avatar__subtitle}>{post.authorRole}</div>
+            <div className={clsx(styles.avatar__subtitle, "author-role")}>{post.authorRole}</div>
           </div>
-          
 
-         <div className={styles.events} style={{
-      '@media screen and (max-width: 966px)': {
-          maxHeight: '100%',
-          flexWrap: 'wrap',
-          maxWidth: '350px'
-      }
-  }}>
-         <div className={styles.imageContainer}>
-          <img src={post.image} alt={post.authorName}/></div>
-          <div className={styles.text}>
-          <p className={styles.description}>{post.description} <a href={post.postUrl} className={styles.readMore}>
-            Read More
-          </a></p>
-         </div></div>
-    
-    </div>
+          <div className={clsx(styles.events, "responsive-events")}>
+            <div className={styles.imageContainer}>
+              <img src={post.image} alt={post.authorName} />
+            </div>
+            <div className={clsx(styles.text, "text-description")}>
+              <p className={clsx(styles.description, "description-text")}>
+                {post.description}{" "}
+                <a href={post.postUrl} className={clsx(styles.readMore, "read-more-link")}>
+                  Read More
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );
-};
+}
 
 export default BlogPage;
