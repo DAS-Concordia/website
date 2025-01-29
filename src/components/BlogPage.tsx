@@ -1,5 +1,6 @@
 // BlogPage.tsx
 import React from "react";
+import { useEffect } from "react";
 import clsx from "clsx";
 
 import styles from "./blog.module.css";
@@ -19,17 +20,6 @@ interface BlogPost {
   image: string;
 }
 
-
-
-// interface BlogPost {
-//   title: string;
-//   authorName: string;
-//   authorUrl: string;
-//   authorRole: string;
-//   description: string;
-  
-//   postUrl: string;
-// }
 
 const blogPosts = [
   {
@@ -76,6 +66,7 @@ const blogPosts = [
 
 const BlogPage: React.FC = () => {
   return (
+    <div className={styles.blogContainer}>
     <div className="container">
      {blogPosts.map((post) => (
         <div key={post.title} className={styles.container} >
@@ -100,7 +91,7 @@ const BlogPage: React.FC = () => {
     
     </div>
       ))}
-    </div>
+    </div></div>
   );
 };
 

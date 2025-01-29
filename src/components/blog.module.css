@@ -27,7 +27,7 @@
 
 .blogContainer {
   /* display: flex; */
-  flex-direction: column;
+  flex-direction: column !important;
   display: grid;
 /* margin-left: 10px; */
   grid-template-columns: repeat(1, 1fr);  gap: 10px; /* Space between grid items */
@@ -137,7 +137,7 @@ width:100%;
     .SmallContainer>img{    
       display:flex;
       /* max-height: '100%'; */
-      flex-wrap: 'wrap';
+      flex-wrap: wrap;
   max-width:100% ;
       /* border:2px solid violet; */
     }}
