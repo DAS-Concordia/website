@@ -74,7 +74,7 @@ function BlogPage() {
               {post.authorName}
             </a>
             <div className={clsx(styles.avatar__subtitle, "author-role")}>{post.authorRole}</div>
-          </div>
+          </div> 
 
           <div className={clsx(styles.events, "responsive-events")}>
             <div className={styles.imageContainer}>
