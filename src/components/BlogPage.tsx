@@ -3,23 +3,25 @@ import React from "react";
 import clsx from "clsx";
 
 import styles from "./blog.module.css";
-// Use require() for production compatibility
-const codereviewImage = require("../images/Blog/codereview.jpg").default;
-const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").default;
-const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
-const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default
+import codereviewImage from "../images/Blog/codereview.jpg";
+import MachinelearningImage from "../images/Blog/Machinelearning.jpg";
+import chattingsoftwareprojectImage from "../images/Blog/chattingsoftwareproject.jpg";
+import haveyouforgettenImage from "../images/Blog/haveyouforgetten.jpg";
 
-// interface BlogPost {
-//   title: string;
-//   authorName: string;
-//   authorUrl: string;
-//   authorRole: string;
-//   description: string;
-  
-//   postUrl: string;
-// }
+interface BlogPost {
+  title: string;
+  authorName: string;
+  authorUrl: string;
+  authorRole: string;
+  description: string;
+  postUrl: string;
+  image: string;
+}
 
-const blogPosts = [
+
+
+
+const blogPosts: BlogPost[] = [
   {
     title: "Taking the Guesswork Out of Code Reviews",
     authorName: "Hassan Khatoonabadi",
@@ -64,7 +66,7 @@ const blogPosts = [
 
 const BlogPage: React.FC = () => {
   return (
-    // <div className="card">
+    <div className="col--6">
 
     <div className={styles.blogContainer}>
      {blogPosts.map((post) => (
@@ -97,7 +99,6 @@ const BlogPage: React.FC = () => {
     </div></div>
       ))}
     </div>
-    
   );
 };
 
