@@ -27,17 +27,18 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/DAS-Concordia/website/edit/main/",
         },
-        blog: {
-          path: './blog',
-          routeBasePath: 'blog',
-          // Base URL for the blog
-          showReadingTime: false,
-          editUrl: "https://github.com/DAS-Concordia/website/edit/main/blog",
-          postsPerPage: 1, // Disable pagination
-          include: ["**/*.md"],         // Includes all Markdown files
-          blogSidebarCount:0
+        // blog: {
+        //   path: './blog',
+        //   routeBasePath: 'blog',
+        //   // Base URL for the blog
+        //   showReadingTime: false,
+        //   editUrl: "https://github.com/DAS-Concordia/website/edit/main/blog",
+        //   postsPerPage: 1, // Disable pagination
+        //   include: ["**/*.md"],         // Includes all Markdown files
+        //   blogSidebarCount:0
 
-        },
+        // },
+            blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
