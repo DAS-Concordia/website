@@ -1,5 +1,5 @@
 .container{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   max-width: 1400px;  /* Adjust width for better alignment */
   margin: 20px auto;  /* Keep it centered */
   padding: 10px 20px;
@@ -24,18 +24,17 @@
   display: grid;
   grid-template-columns: 1fr;  /* Ensure proper spacing */
   gap: 10px;
-  padding-left: 10px;  /* Reduce left padding instead of margin */
-  max-width: 95%; 
+  padding-left: 20px;  /* Reduce left padding instead of margin */
+  max-width: 87%; 
 /* margin-left: 10px; */
   grid-template-columns: repeat(1, 1fr);  gap: 10px; /* Space between grid items */
-
-
-
-  border:2px solid blue;
 }
 
-
- 
+@media screen and (max-width: 550px) {
+.blogContainer{
+  padding-left: 0;
+}
+}
 
 .title{
   /* border:2px solid red; */
