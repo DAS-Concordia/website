@@ -80,7 +80,7 @@ const BlogPage: React.FC = () => {
             </a>
             <div className={styles.avatar__subtitle}>{post.authorRole}</div>
           </div> 
-
+ 
           <div className={styles.events}>
             <div className={styles.imageContainer}>
               <img src={post.image} alt={post.authorName} />
