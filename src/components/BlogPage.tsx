@@ -61,69 +61,34 @@ const blogPosts = [
   },
 ];
 
-// Author component for displaying author info
-function Author({ authorName, authorUrl, authorRole }: BlogPost) {
-  return (
-    <div className={styles.author}>
-      <a href={authorUrl} className={styles.authorName}>
-        {authorName}
-      </a>
-      <div className={styles.authorRole}>{authorRole}</div>
-    </div>
-  );
-}
 
-// BlogPost component for rendering each blog post
-function BlogPostComponent(post: BlogPost) {
-  return (
-    <div className={clsx("card", styles.blogContainer)}>
-    <div className={clsx("card__header", styles.cardHeader)}>
-        <h4>
-          <a href={post.postUrl}>{post.title}</a>
-        </h4>
-        <Author {...post} />
-      </div>
-      <div className={clsx("card-body", styles.events)}>
-        
-        <div className={styles.imageContainer}>
-          <img src={post.image} alt={post.title} />
-        </div>
-        <div className={styles.descriptionContainer}>
-        <p className={styles.description}>
-          {post.description}{" "}
-          <a href={post.postUrl} className={styles.readMore}>
-            Read More
-          </a>
-        </p></div>
-      </div>
-    </div>
-  );
-}
+
 
 // BlogPage component for rendering all blog posts
 const BlogPage: React.FC = () => {
   return (
+  
     <div className="container">
       {blogPosts.map((post) => (
-        <div key={post.title} className={clsx(styles.container, "blog-post-container")}>
-          <div className={clsx(styles.title, "blog-post-title")}>
+        <div key={post.title} className={styles.blogContainer}>
+          <div className={styles.title}>
             <h2>
               <a href={post.postUrl}>{post.title}</a>
             </h2>
-            <a href={post.authorUrl} className={clsx(styles.authorName, "author-link")}>
+            <a href={post.authorUrl} className={styles.authorName}>
               {post.authorName}
             </a>
-            <div className={clsx(styles.avatar__subtitle, "author-role")}>{post.authorRole}</div>
+            <div className={styles.avatar__subtitle}>{post.authorRole}</div>
           </div> 
 
-          <div className={clsx(styles.events, "responsive-events")}>
+          <div className={styles.events}>
             <div className={styles.imageContainer}>
               <img src={post.image} alt={post.authorName} />
             </div>
-            <div className={clsx(styles.text, "text-description")}>
-              <p className={clsx(styles.description, "description-text")}>
+            <div className={styles.text}>
+              <p className={styles.description}>
                 {post.description}{" "}
-                <a href={post.postUrl} className={clsx(styles.readMore, "read-more-link")}>
+                <a href={post.postUrl} className={styles.readMore}>
                   Read More
                 </a>
               </p>
@@ -132,6 +97,7 @@ const BlogPage: React.FC = () => {
         </div>
       ))}
     </div>
+
   );
 };
 
