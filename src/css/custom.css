@@ -147,3 +147,9 @@ nav.pagination-nav
 /* .navbar-sidebar__item.menu:nth-of-type(1) {
   display: none;
 } */
+.col--6{
+  /* --ifm-col-width:50%; */
+}
+.col--offset-3{
+  /* margin-left:25%; */
+}

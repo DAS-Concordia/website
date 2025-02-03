@@ -38,6 +38,7 @@ const config = {
           blogSidebarCount:0
 
         },
+            // blog: false,
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -74,6 +75,8 @@ const config = {
           { to: "/tools", label: "Tools", position: "left" },
        
 
+
+       
 
 
 
