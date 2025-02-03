@@ -88,7 +88,10 @@ const tools = [
 // The ToolsList component to display all tools
 export default function Tools() {
   return (
-    <div className={clsx("container", styles.toolsContainer)}>
+    <>
+        <div className={ styles.toolsContainer}>
+
+    <div className={styles.emptyiteam}></div>
       {tools.map((tool) => (
         <div className={styles.card} key={tool.id}>
           <div className={clsx("card__header", styles.toolsHeader)}>
@@ -165,6 +168,6 @@ export default function Tools() {
           </div>
             </div>
       ))}
-    </div>
+    </div></>
   );
 }

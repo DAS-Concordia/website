@@ -1,9 +1,31 @@
-.toolCreator{
- 
-/* border:2px solid red; */
-margin-bottom: 0;
+
+.emptyiteam{
+  /* border:2px solid violet; */
+}
+.toolsContainer{
+  /* border:5px solid red; */
+  max-width: 1400px;  /* Adjust width for better alignment */
+  margin: 20px auto;  /* Keep it centered */
+  padding: 10px 20px;
 }
 
+.card{
+  border:2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr;  /* Ensure proper spacing */
+  gap: 10px;
+  padding-left: 20px;  /* Reduce left padding instead of margin */
+  max-width: 85%; 
+  width:100%;
+/* margin-left: 10px; */
+  grid-template-columns: repeat(1, 1fr);  gap: 10px;
+}
+@media screen and (max-width: 550px) {
+  .card{
+    padding-left: 0;
+    margin-left:0;
+  
+  }}
 .toolCard {
 
   /* border:2px solid red; */
@@ -96,3 +118,6 @@ vertical-align: center;
   /* border:2px solid orange; */
   width:100%;
 }
+.toolCreator{
+  margin-bottom: 0;;
+  }
