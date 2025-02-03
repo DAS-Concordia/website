@@ -10,7 +10,7 @@
 }
 
 .card{
-  border:2px solid blue;
+  /* border:2px solid blue; */
   display: grid;
   grid-template-columns: 1fr;  /* Ensure proper spacing */
   gap: 10px;
