@@ -1,0 +1,141 @@
+
+.avatar__subtitle{
+  font-weight: normal;
+  font-size: 15px;
+}
+.header {
+
+  padding: 20px;
+  text-align: center;
+
+}
+
+.mainContent {
+  padding: 20px;
+}
+
+.footer {
+ 
+  text-align: center;
+  padding: 10px;
+
+}
+
+.container{
+  /* border:2px solid orange; */
+}
+
+.blogContainer {
+  /* display: flex; */
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 3 equal columns */
+  gap: 40px; /* Space between grid items */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; 
+  margin-top:30px;
+  /* border:2px solid blue; */
+}
+@media screen and (max-width: 1400px) {
+  .blogContainer{
+    margin-left:10px;
+  }
+  }
+.blogPost {
+
+  /* margin-bottom: 35px;
+  margin-top:30px; */
+}
+.title{
+/* border:2px solid red;  */
+ border-radius: 8px;
+margin-bottom: 0;
+}
+.authorInfo {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+
+}
+.subtilte {
+/* border:2px solid green; */
+  /* margin-bottom: 0;
+  padding-bottom: 0; */
+}
+.authorName {
+  color:rgb(54, 109, 155);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0; /* Remove any top margin from the author name */
+  display: block;
+  /* border:2px solid violet; */
+}
+
+.authorName:hover {
+  text-decoration: underline;
+}
+
+.authorRole {
+  display: block;
+  font-style: italic;
+}
+
+.description {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.readMore {
+  color:rgb(54, 109, 155);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+.events {
+  margin-bottom: 20px;
+  /* max-height: 200px; */
+  display: flex;
+  flex-direction: row;
+ /* width:100%; */
+    /* border:2px solid green; */
+
+}
+@media screen and (max-width: 550px) {
+  .events {
+    display:flex;
+flex-direction: column
+;  flex-wrap: 'wrap';
+max-height:500px;
+  /* border:2px solid green; */
+  /* max-width: '350px' */
+}
+}
+.imageContainer {
+  width: 100%; /* Ensure full width within the parent container */
+  max-width: 200px; /* Adjust to your preference */
+  height: 150px; /* Set a consistent height */
+  overflow: hidden; /* Prevent overflow of images */
+  display: flex; /* Center align content (optional) */
+
+  /* border: 2px solid red; */
+}
+.imageContainer> img{
+width:100%;
+
+  }
+  
+  .text{
+    padding-left: 10px;
+    /* border:2px solid blue; */
+  }
+  @media screen and (max-width: 550px) {
+    .SmallContainer>img{    
+      display:flex;
+      /* max-height: '100%'; */
+      flex-wrap: 'wrap';
+  max-width:100% ;
+      /* border:2px solid violet; */
+    }}

@@ -5,6 +5,7 @@ authors:
   title: PhD Student
   url: /members/jasmine-latendresse
 ---
+<h2>Managing Your Machine Learning Models - What’s Inside?</h2>
 
 In today's world of artificial intelligence and machine learning, keeping ML models organized and running efficiently is crucial. Yet, it’s not always straightforward. Imagine constantly adjusting your model as data changes, handling unexpected bugs, or ensuring it works seamlessly in different environments. There is a lot going on under the hood! This study dives into the core activities and hurdles of managing ML models effectively and presents a practical guide for ML professionals.
 
