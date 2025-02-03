@@ -20,12 +20,13 @@
 
 
 .blogContainer {
-
+/* border:2px solid red; */
   display: grid;
   grid-template-columns: 1fr;  /* Ensure proper spacing */
   gap: 10px;
   padding-left: 20px;  /* Reduce left padding instead of margin */
   max-width: 87%; 
+  width:100%;
 /* margin-left: 10px; */
   grid-template-columns: repeat(1, 1fr);  gap: 10px; /* Space between grid items */
 }
@@ -35,7 +36,9 @@
   padding-left: 0;
 }
 }
-
+.emptyiteam{
+  /* border:2px solid blue; */
+}
 .title{
   /* border:2px solid red; */
   /* width:100%; */

@@ -68,12 +68,15 @@ const blogPosts = [
 // BlogPage component for rendering all blog posts
 const BlogPage: React.FC = () => {
   return (
-  
+    <>
+    <div className={styles.emptyiteam}></div>
     <div className={styles.container}>
+   
+
       {blogPosts.map((post) => (
-        <div>
-        <div key={post.title} className={styles.blogContainer}>
-          <div></div>
+    
+        <div  key={post.title} className={styles.blogContainer}>
+
           <div className={styles.title}>
             <h2>
               <a href={post.postUrl}>{post.title}</a>
@@ -98,10 +101,10 @@ const BlogPage: React.FC = () => {
             </div>
           </div>
         </div>
-        </div>
+
       ))}
     </div>
-
+    </>
   );
 };
 
