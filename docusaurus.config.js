@@ -27,6 +27,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           editUrl: "https://github.com/DAS-Concordia/website/edit/main/",
         },
+
         blog: {
           path: './blog',
           routeBasePath: 'blog',
@@ -71,9 +72,13 @@ const config = {
           { to: "/publications", label: "Publications", position: "left" },
           { to: "/sponsors", label: "Sponsors", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
+
+          // { to: "/event", label: "Event", position: "left" },
           { to: "/tools", label: "Tools", position: "left" },
        
 
+
+       
 
 
 
