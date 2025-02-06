@@ -7,6 +7,7 @@ const codereviewImage = require("../images/Blog/codereview.jpg").default;
 const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").default;
 const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default
+const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default
 
 // interface BlogPost {
 //   title: string;
@@ -39,6 +40,16 @@ const blogPosts = [
     description:
       "In today's world of artificial intelligence and machine learning, keeping ML models organized and running efficiently is crucial. Yet, it’s not always straightforward. This study dives into the core activities and hurdles of managing ML models effectively and presents a practical guide for ML professionals.",
     postUrl: "/blog/publications/Managing_Your_Machine_Learning_Models",
+  },
+  {
+    title: "AlphaBot: The Smart Solution for Smarter Software Chatbots",
+    authorName: "Farbod Farhour ",
+    image:AlphaBotImage,
+    authorUrl: "/members/farbod-farhour",
+    authorRole: "Master's Student",
+    description:
+      "Training chatbots to handle software engineering (SE) queries presents unique challenges due to the technical and domain specific nature of the field. Unlike general conversational AI, SE chatbots must accurately interpret specialized terms like “bug” (software defect) or “commit” (code changes). These terms carry precise meanings within the context of software development, making them difficult to process with standard methods. ",
+    postUrl: "/blog/publications/AlphaBot_The_Smart_Solution_for_Smarter_Software_Chatbots",
   },
   {
     title: "Chatting with Your Software Project",
