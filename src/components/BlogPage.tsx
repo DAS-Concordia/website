@@ -6,9 +6,11 @@ import styles from "./blog.module.css";
 const codereviewImage = require("../images/Blog/codereview.jpg").default;
 const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").default;
 const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
-const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default
-const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default
-const SoftwareLibrarianImage = require("../images/blog/SoftwareLibrarian.jpg").default
+const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default;
+const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
+const SoftwareLibrarianImage = require("../images/blog/SoftwareLibrarian.jpg").default;
+
+
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
