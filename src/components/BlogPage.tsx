@@ -9,7 +9,7 @@ const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwarepro
 
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default;
 const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
-const SoftwareLibrarianImage = require("../images/blog/SoftwareLibrarian.jpg").default;
+const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
 
 
 // interface BlogPost {
