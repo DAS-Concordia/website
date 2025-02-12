@@ -8,7 +8,7 @@ const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").defau
 const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default
 const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default
-
+const SoftwareLibrarianImage = require("../images/blog/SoftwareLibrarian.jpg").default
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -20,6 +20,16 @@ const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default
 // }
 
 const blogPosts = [
+  {
+    title: "Smart Package Management with Software Librarian",
+    authorName: "Jasmine Latendresse",
+    image: SoftwareLibrarianImage,
+    authorUrl: "/members/jasmine-latendresse",
+    authorRole: "PhD Student",
+    description:
+      "In modern software development, open-source packages are essential building blocks that help developers innovate faster. However, managing these dependencies effectively is challenging. Issues such as outdated or deprecated libraries, licensing conflicts, and security vulnerabilities can compromise software quality. With the rise of AI-powered coding assistants like GitHub Copilot, ensuring that recommended packages are safe and reliable is more crucial than ever. ",
+    postUrl: "/blog/publications/Smart_Package_Management_with_Software_Librarian",
+  },
 
   {
     title: "Taking the Guesswork Out of Code Reviews",
