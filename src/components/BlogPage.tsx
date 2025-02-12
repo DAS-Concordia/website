@@ -8,7 +8,7 @@ const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").defau
 const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default;
 const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
-const SoftwareLibrarianImage = require("../images/blog/SoftwareLibrarian.jpg").default;
+const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
 
 
 // interface BlogPost {
