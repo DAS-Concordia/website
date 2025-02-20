@@ -7,10 +7,18 @@ import styles from "./blog.module.css";
 const codereviewImage = require("../images/Blog/codereview.jpg").default;
 const MachinelearningImage = require("../images/Blog/Machinelearning.jpg").default;
 const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwareproject.jpg").default;
+
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default;
 const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
 const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
 const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
+=======
+
+const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default;
+const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
+const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
+
+
 
 // interface BlogPost {
 //   title: string;
@@ -24,6 +32,7 @@ const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
  
 const blogPosts = [
   {
+
     title: "RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot",
     authorName: "Samuel Abedu",
     image: RepoChatImage,
@@ -34,6 +43,7 @@ const blogPosts = [
     postUrl: "/blog/publications/RepoChat_Enhancing_GitHub_Repository_Interactions_with_LLM-Powered_Chatbot",
   },
   { 
+
     title: "Smart Package Management with Software Librarian",
     authorName: "Jasmine Latendresse",
     image: SoftwareLibrarianImage,
