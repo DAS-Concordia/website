@@ -9,7 +9,7 @@ const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwarepro
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default;
 const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
 const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
-
+const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
 
 // interface BlogPost {
 //   title: string;
@@ -22,6 +22,16 @@ const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").d
 // }
 
 const blogPosts = [
+  {
+    title: "RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot",
+    authorName: "Samuel Abedu",
+    image: RepoChatImage,
+    authorUrl: "/members/samuel-abedu",
+    authorRole: "PhD Student",
+    description:
+      "In the dynamic landscape of software development, repositories like GitHub hold invaluable data, including source code, documentation, issue tracking, and commit histories. However, accessing and interpreting this information can be time-consuming and require considerable technical expertise. This complexity poses challenges, especially for non-technical stakeholders, such as project managers, who need insights without delving into technical details.",
+    postUrl: "/blog/publications/RepoChat_Enhancing_GitHub_Repository_Interactions_with_LLM-Powered_Chatbot",
+  },
   {
     title: "Smart Package Management with Software Librarian",
     authorName: "Jasmine Latendresse",
