@@ -53,7 +53,7 @@ const blogPosts = [
       "If you've ever contributed to a software project, you know that waiting for feedback on a Pull Request (PR) can be like watching paint dry. Contributors and maintainers both benefit when PRs are reviewed efficiently, but the waiting game often comes down to when, and how soon, responses happen.",
     postUrl: "/blog/publications/Taking_the_Guesswork_Out_of_Code_Reviews",
   },
-  {
+  { 
     title: "Managing Your Machine Learning Models - What’s Inside?",
     authorName: "Jasmine Latendresse",
     image:MachinelearningImage,
