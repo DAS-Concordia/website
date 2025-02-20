@@ -1,6 +1,7 @@
 // BlogPage.tsx
 import React from "react";
 import clsx from "clsx";
+
 import styles from "./blog.module.css";
 // Use require() for production compatibility
 const codereviewImage = require("../images/Blog/codereview.jpg").default;
@@ -22,26 +23,7 @@ const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
 // }
 
 const blogPosts = [
-  {
-    title: "RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot",
-    authorName: "Samuel Abedu",
-    image: RepoChatImage,
-    authorUrl: "/members/samuel-abedu",
-    authorRole: "PhD Student",
-    description:
-      "In the dynamic landscape of software development, repositories like GitHub hold invaluable data, including source code, documentation, issue tracking, and commit histories. However, accessing and interpreting this information can be time-consuming and require considerable technical expertise. This complexity poses challenges, especially for non-technical stakeholders, such as project managers, who need insights without delving into technical details.",
-    postUrl: "/blog/publications/RepoChat_Enhancing_GitHub_Repository_Interactions_with_LLM-Powered_Chatbot",
-  },
-  {
-    title: "Smart Package Management with Software Librarian",
-    authorName: "Jasmine Latendresse",
-    image: SoftwareLibrarianImage,
-    authorUrl: "/members/jasmine-latendresse",
-    authorRole: "PhD Student",
-    description:
-      "In modern software development, open-source packages are essential building blocks that help developers innovate faster. However, managing these dependencies effectively is challenging. Issues such as outdated or deprecated libraries, licensing conflicts, and security vulnerabilities can compromise software quality. With the rise of AI-powered coding assistants like GitHub Copilot, ensuring that recommended packages are safe and reliable is more crucial than ever. ",
-    postUrl: "/blog/publications/Smart_Package_Management_with_Software_Librarian",
-  },
+
   {
     title: "Taking the Guesswork Out of Code Reviews",
     authorName: "Hassan Khatoonabadi",
@@ -94,49 +76,33 @@ const blogPosts = [
   },
 ];
 
-
-
-
-// BlogPage component for rendering all blog posts
 const BlogPage: React.FC = () => {
   return (
-    <>
-    <div className={styles.emptyiteam}></div>
-    <div className={styles.container}>
-   
-
-      {blogPosts.map((post) => (
-    
-        <div  key={post.title} className={styles.blogContainer}>
-
-          <div className={styles.title}>
-            <h2>
-              <a href={post.postUrl}>{post.title}</a>
-            </h2>
-            <a href={post.authorUrl} className={styles.authorName}>
+    <div className="container">
+     {blogPosts.map((post) => (
+        <div key={post.title} className={styles.container} >
+      
+       <div className={styles.title}>
+          <h2><a href={post.postUrl}>{post.title}</a></h2>
+          <a href={post.authorUrl} className={styles.authorName}>
               {post.authorName}
             </a>
             <div className={styles.avatar__subtitle}>{post.authorRole}</div>
-          </div> 
- 
-          <div className={styles.events}>
-            <div className={styles.imageContainer}>
-              <img src={post.image} alt={post.authorName} />
-            </div>
-            <div className={styles.text}>
-              <p className={styles.description}>
-                {post.description}{" "}
-                <a href={post.postUrl} className={styles.readMore}>
-                  Read More
-                </a>
-              </p>
-            </div>
           </div>
-        </div>
+          
 
+         <div className={styles.events} >
+         <div className={styles.imageContainer}>
+          <img src={post.image} alt={post.authorName}/></div>
+          <div className={styles.text}>
+          <p className={styles.description}>{post.description} <a href={post.postUrl} className={styles.readMore}>
+            Read More
+          </a></p>
+         </div></div>
+    
+    </div>
       ))}
     </div>
-    </>
   );
 };
 
