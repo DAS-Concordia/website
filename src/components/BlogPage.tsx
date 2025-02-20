@@ -1,6 +1,7 @@
 // BlogPage.tsx
 import React from "react";
 import clsx from "clsx";
+
 import styles from "./blog.module.css";
 // Use require() for production compatibility
 const codereviewImage = require("../images/Blog/codereview.jpg").default;
@@ -10,6 +11,11 @@ const chattingsoftwareprojectImage = require("../images/Blog/chattingsoftwarepro
 const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").default;
 const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
 const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
+const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
+
+
+
+
 
 
 // interface BlogPost {
@@ -21,9 +27,21 @@ const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").d
   
 //   postUrl: string;
 // }
-
+ 
 const blogPosts = [
   {
+
+    title: "RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot",
+    authorName: "Samuel Abedu",
+    image: RepoChatImage,
+    authorUrl: "/members/samuel-abedu",
+    authorRole: "PhD Student",
+    description:
+      "In the dynamic landscape of software development, repositories like GitHub hold invaluable data, including source code, documentation, issue tracking, and commit histories. However, accessing and interpreting this information can be time-consuming and require considerable technical expertise. This complexity poses challenges, especially for non-technical stakeholders, such as project managers, who need insights without delving into technical details.",
+    postUrl: "/blog/publications/RepoChat_Enhancing_GitHub_Repository_Interactions_with_LLM-Powered_Chatbot",
+  },
+  { 
+
     title: "Smart Package Management with Software Librarian",
     authorName: "Jasmine Latendresse",
     image: SoftwareLibrarianImage,
@@ -43,7 +61,7 @@ const blogPosts = [
       "If you've ever contributed to a software project, you know that waiting for feedback on a Pull Request (PR) can be like watching paint dry. Contributors and maintainers both benefit when PRs are reviewed efficiently, but the waiting game often comes down to when, and how soon, responses happen.",
     postUrl: "/blog/publications/Taking_the_Guesswork_Out_of_Code_Reviews",
   },
-  {
+  { 
     title: "Managing Your Machine Learning Models - What’s Inside?",
     authorName: "Jasmine Latendresse",
     image:MachinelearningImage,
@@ -85,49 +103,33 @@ const blogPosts = [
   },
 ];
 
-
-
-
-// BlogPage component for rendering all blog posts
 const BlogPage: React.FC = () => {
   return (
-    <>
-    <div className={styles.emptyiteam}></div>
-    <div className={styles.container}>
-   
-
-      {blogPosts.map((post) => (
-    
-        <div  key={post.title} className={styles.blogContainer}>
-
-          <div className={styles.title}>
-            <h2>
-              <a href={post.postUrl}>{post.title}</a>
-            </h2>
-            <a href={post.authorUrl} className={styles.authorName}>
+    <div className="container">
+     {blogPosts.map((post) => (
+        <div key={post.title} className={styles.container} >
+      
+       <div className={styles.title}>
+          <h2><a href={post.postUrl}>{post.title}</a></h2>
+          <a href={post.authorUrl} className={styles.authorName}>
               {post.authorName}
             </a>
             <div className={styles.avatar__subtitle}>{post.authorRole}</div>
-          </div> 
- 
-          <div className={styles.events}>
-            <div className={styles.imageContainer}>
-              <img src={post.image} alt={post.authorName} />
-            </div>
-            <div className={styles.text}>
-              <p className={styles.description}>
-                {post.description}{" "}
-                <a href={post.postUrl} className={styles.readMore}>
-                  Read More
-                </a>
-              </p>
-            </div>
           </div>
-        </div>
+          
 
+         <div className={styles.events} >
+         <div className={styles.imageContainer}>
+          <img src={post.image} alt={post.authorName}/></div>
+          <div className={styles.text}>
+          <p className={styles.description}>{post.description} <a href={post.postUrl} className={styles.readMore}>
+            Read More
+          </a></p>
+         </div></div>
+    
+    </div>
       ))}
     </div>
-    </>
   );
 };
 
