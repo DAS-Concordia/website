@@ -1,9 +1,9 @@
 ---
 title: RepoChat
 authors:
-  name: Hassan Khatoonabadi
-  title: Postdoctoral Researcher
-  url: /members/hassan-khatoonabadi
+  name: Samuel Abedu
+  title: PhD Student
+  url: /members/samuel-abedu
 ---
 
 <h2>RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot</h2>
