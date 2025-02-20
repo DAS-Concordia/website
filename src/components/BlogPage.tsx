@@ -33,7 +33,7 @@ const blogPosts = [
       "In the dynamic landscape of software development, repositories like GitHub hold invaluable data, including source code, documentation, issue tracking, and commit histories. However, accessing and interpreting this information can be time-consuming and require considerable technical expertise. This complexity poses challenges, especially for non-technical stakeholders, such as project managers, who need insights without delving into technical details.",
     postUrl: "/blog/publications/RepoChat_Enhancing_GitHub_Repository_Interactions_with_LLM-Powered_Chatbot",
   },
-  {
+  { 
     title: "Smart Package Management with Software Librarian",
     authorName: "Jasmine Latendresse",
     image: SoftwareLibrarianImage,
