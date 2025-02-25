@@ -3,19 +3,21 @@
   /* border:2px solid violet; */
 }
 .toolsContainer{
-  /* border:5px solid red; */
+  /* border:5px solid blue; */
   max-width: 1400px;  /* Adjust width for better alignment */
-  margin: 20px auto;  /* Keep it centered */
-  padding: 10px 20px;
+  margin: 40px auto;  /* Keep it centered */
+  padding: 20px 20px;
 }
 
 .card{
-  /* border:2px solid blue; */
-  display: grid;
+  /* border:5px solid orange; */
+  display: flex;
+  /* flex-direction: row; */
+
   grid-template-columns: 1fr;  /* Ensure proper spacing */
-  gap: 10px;
-  padding-left: 20px;  /* Reduce left padding instead of margin */
-  max-width: 85%; 
+  gap: 5px;
+  /* Reduce left padding instead of margin */
+  max-width: 95%; 
   width:100%;
 /* margin-left: 10px; */
   grid-template-columns: repeat(1, 1fr);  gap: 10px;
@@ -26,6 +28,7 @@
     margin-left:0;
   
   }}
+
 .toolCard {
 
   /* border:2px solid red; */
@@ -35,10 +38,10 @@
   border-radius: 8px; /* Optional: Rounded corners */
 }
 .toolImageContainer{
-  /* border:2px solid green; */
+  /* border:5px solid green; */
   width: 100%; /* Ensure full width within the parent container */
-  max-width: 100px; /* Adjust to your preference */
-  height: 100px; /* Set a consistent height */
+  max-width: 120px; /* Adjust to your preference */
+  height: 100%; /* Set a consistent height */
 }
 .toolImageContainer> img{
   width:100%;
@@ -47,16 +50,19 @@
     }
 .toolContentContainer{
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
+  /* border:5px solid violet; */
+  /* margin-left: 20px; */
   /* flex-wrap: wrap; */
 
   /* padding: 15px;  */
   /* border:2px solid blue; */
   width:100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .toolsHeader {
+  /* border:2px solid red; */
   background-color: var(--ifm-color-emphasis-200);
   padding-bottom: 1rem !important;
 }
@@ -79,15 +85,22 @@
   flex-direction: row;
   padding-left: 20px; /* Add space between image and content */
 }
-.card{
+.cards{
   /* border:5px solid orange; */
+  margin-left: 20px;
   margin-bottom: 30px;
-}
+  display:flex; 
+  flex-direction: row;
+}@media screen and (max-width: 550px) {
+  .cards{
+    margin-left:0;
+  
+  }}
 .toolbox{
   /* border:5px solid green; */
   display :flex; 
-  padding:var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing);
-
+  /* padding:var(--ifm-card-vertical-spacing) var(--ifm-card-horizontal-spacing); */
+margin-top:0;
   flex-direction: row;
   flex-wrap: wrap;
 width:100%;
@@ -96,16 +109,12 @@ width:100%;
 /* width:100%; */
 
 }
-.floatButtons{
-flex:1;
-/* border:2px solid red; */
-height:50%;
-vertical-align: center;
-  /* Align buttons to the right */
-  /* margin-right: auto;   */
-/* border:2px solid red; */
-/* gap: 10px; */
-}
+
+  .floatButtons {
+    float: right;
+    margin-left: 1em;
+  }
+
 .name{
   /* padding-left:20px; */
   width:82%;
@@ -115,9 +124,15 @@ vertical-align: center;
 
 }
 .cardbody{
-  /* border:2px solid orange; */
+
+  /* display: flex; */
+  /* flex-direction :row; */
+  /* border:5px solid violet; */
+  /* padding-left:50px; */
+  /* margin-top: 0; */
   width:100%;
 }
 .toolCreator{
-  margin-bottom: 0;;
+  /* border:2px solid gray; */
+  margin-bottom: 0;
   }
