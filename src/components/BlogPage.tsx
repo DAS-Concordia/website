@@ -13,6 +13,10 @@ const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
 const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
 const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
 
+const codemapperImage= require("../images/Blog/codemapper.jpg").default;
+const DataVersionControlImage= require("../images/Blog/DataVersionControl.jpg").default;
+
+
 
 
 
@@ -80,6 +84,26 @@ const blogPosts = [
     description:
       "Training chatbots to handle software engineering (SE) queries presents unique challenges due to the technical and domain specific nature of the field. Unlike general conversational AI, SE chatbots must accurately interpret specialized terms like “bug” (software defect) or “commit” (code changes). These terms carry precise meanings within the context of software development, making them difficult to process with standard methods. ",
     postUrl: "/blog/publications/AlphaBot_The_Smart_Solution_for_Smarter_Software_Chatbots",
+  },
+  {
+    title: "Code Mapper: Charting the Global Pulse of Open Source.",
+    authorName: "Thomas Le Tourneau",
+    image: codemapperImage,
+    authorUrl: "/members/thomas-le-tourneau",
+    authorRole: "Undergraduate Student ",
+    description:
+      "Open source is more than just code, it’s a global movement fueled by collaboration across borders. Every repository, every commit, and every pull request represent the collective effort of developers worldwide. But despite this vast interconnected network, the geographical reach of open-source contributions often goes unnoticed. Code Mapper changes that.",
+    postUrl: "/blog/publications/CodeMapper_Charting_the_Global_Pulse_of_Open_Source",
+  },
+  {
+    title: "Data Version Control (DVC): A Foundational Tool for Reproducible Machine Learning Workflows   ",
+    authorName: "Lorena Barreto",
+    image: DataVersionControlImage,
+    authorUrl: "https://www.linkedin.com/in/lorenasimedo/?originalSubdomain=ca",
+    authorRole: "Masters Student",
+    description:
+      "Managing datasets, models, and experiments in data science is complex. Unlike source code, which is easily tracked with Git, data files are large, constantly changing, and difficult to version. Without a structured system, teams struggle with inconsistencies, lost work, and the inability to reproduce results. Data Version Control (DVC) extends Git to handle data, models, and entire workflows, ensuring seamless collaboration, reproducibility, and efficient tracking of every stage in a data science project.",
+    postUrl: "/blog/publications/DVC_in_Open_Source_ML_development",
   },
   {
     title: "Chatting with Your Software Project",
