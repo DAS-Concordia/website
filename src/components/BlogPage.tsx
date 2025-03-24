@@ -12,8 +12,10 @@ const haveyouforgettenImage = require("../images/Blog/haveyouforgetten.jpg").def
 const AlphaBotImage = require("../images/Blog/AlphaBot.jpg").default;
 const SoftwareLibrarianImage = require("../images/Blog/SoftwareLibrarian.jpg").default;
 const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
+
 const codemapperImage= require("../images/Blog/codemapper.jpg").default;
 const DataVersionControlImage= require("../images/Blog/DataVersionControl.jpg").default;
+
 
 
 
