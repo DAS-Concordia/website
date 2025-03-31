@@ -1,7 +1,6 @@
 // BlogPage.tsx
 import React from "react";
 import clsx from "clsx";
-
 import styles from "./blog.module.css";
 // Use require() for production compatibility
 const codereviewImage = require("../images/Blog/codereview.jpg").default;

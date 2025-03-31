@@ -65,7 +65,11 @@ const tools = [
   },
   {
     id: "Mahmoud Alfadel    ",
+<<<<<<< HEAD
     name: "Mahmoud Alfadel, Diego Elias Costa, Emad Shihab, and Bram Adams.    ",
+=======
+    name: "Mahmoud Alfadel, Diego Elias Costa, Emad Shihab, and BRAM ADAMS.    ",
+>>>>>>> 65606f1ffb0dfb6d368d90f170f00dc6b0c0342b
     toolName: "DepReveal ",
     image: DepRevealImage,
     github:"https://github.com/mahmoud-alfadel/DepReveal",
@@ -73,7 +77,11 @@ const tools = [
   },
   {
     id: "Khaled Badran",
+<<<<<<< HEAD
     name: "Khaled Badran, Pierre-Olivier, Amanda Kolopanis, Rached Bouchoucha, Antonio Collante, Diego Costa, Emad Shihab, and Foutse Khomh. ",
+=======
+    name: "Khaled Badran, Pierre-Olivier, Amanda Kolopanis, Rached Bouchoucha, Antonio Collante, Diego Elias Costa, Emad Shihab, and Foutse Khomh. ",
+>>>>>>> 65606f1ffb0dfb6d368d90f170f00dc6b0c0342b
     toolName: "FairBoost ",
     image: FairBoostImage,
     github:"https://github.com/KhaledBadran/FairBoost",
