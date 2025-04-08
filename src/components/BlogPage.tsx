@@ -16,6 +16,9 @@ const RepoChatImage= require("../images/Blog/RepoChat.jpg").default;
 const codemapperImage= require("../images/Blog/codemapper.jpg").default;
 const DataVersionControlImage= require("../images/Blog/DataVersionControl.jpg").default;
 
+const AIandTODOCommentsImage= require("../images/Blog/AIandTODOComments.jpg").default;
+const SE4AITrainingProgramImage= require("../images/Blog/SE4AITrainingProgram.jpg").default;
+
 
 
 
@@ -104,6 +107,27 @@ const blogPosts = [
     description:
       "Managing datasets, models, and experiments in data science is complex. Unlike source code, which is easily tracked with Git, data files are large, constantly changing, and difficult to version. Without a structured system, teams struggle with inconsistencies, lost work, and the inability to reproduce results. Data Version Control (DVC) extends Git to handle data, models, and entire workflows, ensuring seamless collaboration, reproducibility, and efficient tracking of every stage in a data science project.",
     postUrl: "/blog/publications/DVC_in_Open_Source_ML_development",
+  },
+  {
+
+    title: "AI and TODO Comments: A New Way to Think About Code Generation",
+    authorName: "David OBrien ",
+    image: AIandTODOCommentsImage,
+    authorUrl: "https://davidmobrien.github.io/",
+    authorRole: "PhD Student",
+    description:
+      "Every developer has written a TODO comment at some point in their code. Whether it's a simple reminder to fix a bug, mark unfinished work, or indicate a piece of technical debt, these short notes have been a go-to method for flagging issues for later. But with the rise of AI-powered tools like GitHub Copilot, these TODOs may be taking on a whole new purpose. So, what happens when AI tools, like Copilot, come across these comments? Do they help, ignore, or maybe even make things worse? ",
+    postUrl: "/blog/publications/AI_and_TODO_Comments",
+  },
+  {
+    title: "SE4AI: Bridging Technical Expertise and Social Responsibility in AI Development",
+    authorName: "Ahmad Abdellatif",
+    image: SE4AITrainingProgramImage,
+    authorUrl: "/members/ahmad-abdellatif",
+    authorRole: "PhD Student",
+    description:
+      "AI-driven software systems have rapidly become a cornerstone of modern technology, transforming industries and creating endless opportunities for innovation. However, building these systems involves much more than mastering algorithms or fine-tuning data models. Integrating AI into software development requires a deeper understanding of the technical, ethical, and social implications of the technology. That’s where **SE4AI** comes in. This training program is designed to equip participants not just with the technical skills needed for AI development, but also with the broader societal understanding that these systems demand.",
+    postUrl: "/blog/publications/SE4AI_Bridging_Technical_Expertise_and_Social_Responsibility_in_AI_Development",
   },
   {
     title: "Chatting with Your Software Project",

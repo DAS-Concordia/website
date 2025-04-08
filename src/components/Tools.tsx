@@ -4,8 +4,8 @@ import styles from "./Tools.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
-
-// Importing images
+ 
+// Importing images 
 import TheSoftwareLibrarianImage from "../images/TheSoftwareLibrarian.jpg";
 import codemapperImage from "../images/codemapper.jpg";
 import DependencyImage from "../images/Dependency.jpg";
