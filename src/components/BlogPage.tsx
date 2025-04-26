@@ -18,6 +18,7 @@ const DataVersionControlImage= require("../images/Blog/DataVersionControl.jpg").
 
 const AIandTODOCommentsImage= require("../images/Blog/AIandTODOComments.jpg").default;
 const SE4AITrainingProgramImage= require("../images/Blog/SE4AITrainingProgram.jpg").default;
+const DependencyUpdateStrategiesImage= require("../images/Blog/DependencyUpdateStrategies.jpg").default;
 
 
 
@@ -36,6 +37,7 @@ const SE4AITrainingProgramImage= require("../images/Blog/SE4AITrainingProgram.jp
 // }
  
 const blogPosts = [
+
   {
 
     title: "RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot",
@@ -148,6 +150,16 @@ const blogPosts = [
     description:
       "After the left-pad fiasco, David Haney’s blog post: “Have We Forgotten How to Program?”, lead to many heated discussions whether developers should take on dependencies for simple tasks. You can read the post and the discussion that ensued for all the details, but to summarize it – a dependency on an 11 line package that implements a left padding string function was removed; this package was used by Babel.",
     postUrl: "/blog/publications/Have_we_forgetten_how_to_program",
+  },  {
+
+    title: "Navigating Dependency Updates: What Influences a Developer's Strategy? ",
+    authorName: "Abbas Javan Jafari ",
+    image: DependencyUpdateStrategiesImage,
+    authorUrl: "/members/abbas-javan",
+    authorRole: "PhD Student",
+    description:
+      "Keeping software dependencies up to date is a balancing act. Developers want to integrate the latest features, security patches, and bug fixes, but they also need to avoid updates that might introduce breaking changes. While Semantic Versioning (SemVer) was designed to help with this process, not all developers strictly follow its guidelines. Some prefer more restrictive update strategies, while others lean towards more flexible approaches. The choice often depends on project stability, team policies, and the nature of the software being developed, and the standards and best practices of the broader ecosystem. ",
+    postUrl: "/blog/publications/Navigating_Dependency_Updates_What_Influences_a_Developers_Strategy",
   },
 ];
 
