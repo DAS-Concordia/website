@@ -98,7 +98,7 @@ const TeamMemberLarge = ({
         <div className="card__image">
           <img src={imgURL || importProfilePicture(id)} alt={name} />
         </div>
-        <div className="card__body">
+        <div className={clsx("card__body", styles.memberName)}>
           <h3 className="margin-bottom--none">{name}</h3>
           <span>{role}</span>
 
