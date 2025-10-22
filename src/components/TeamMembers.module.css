@@ -19,3 +19,9 @@
 .memberButtons  a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 997px) {
+  .memberName{
+    padding-top: 45px
+  }
+}
