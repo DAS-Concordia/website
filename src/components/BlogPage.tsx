@@ -20,6 +20,7 @@ const AIandTODOCommentsImage= require("../images/Blog/AIandTODOComments.jpg").de
 const SE4AITrainingProgramImage= require("../images/Blog/SE4AITrainingProgram.jpg").default;
 const DependencyUpdateStrategiesImage= require("../images/Blog/DependencyUpdateStrategies.jpg").default;
 
+const IdentifyingMaliciousPackagesImage= require("../images/Blog/IdentifyingMaliciousPackages.jpeg").default;
 
 
 
@@ -37,7 +38,17 @@ const DependencyUpdateStrategiesImage= require("../images/Blog/DependencyUpdateS
 // }
  
 const blogPosts = [
+  {
 
+    title: "Identifying Malicious Packages through Maintainer and Project Signals ",
+    authorName: "Haya Samaana",
+    image: IdentifyingMaliciousPackagesImage,
+    authorUrl: "https://www.linkedin.com/in/haya-samaana/",
+    authorRole: "Master's Student",
+    description:
+      "Malicious software packages are increasingly targeting open-source ecosystems like PyPI (the Python Package Index), often introduced through subtle tactics such as typosquatting, misleading metadata, or suspicious maintainer activity. These packages can cause serious harm before they are detected. To help address this challenge, we developed a machine learning-based method that automatically identifies malicious PyPI packages by analyzing their metadata, code, configuration files, and other package-level signals.",
+    postUrl: "/blog/publications/Identifying_Malicious_Packages_through_Maintainer_and_Project_Signals",
+  },
   {
 
     title: "RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot",
