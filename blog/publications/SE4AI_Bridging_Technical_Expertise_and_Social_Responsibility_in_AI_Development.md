@@ -7,8 +7,11 @@ authors:
   url: /members/ahmad-abdellatif
 
 ---
+import ViewCounter from "@site/src/components/ViewCounter";
+
 
 <h2>SE4AI: Bridging Technical Expertise and Social Responsibility in AI Development </h2> 
+<ViewCounter pageKey="SE4AI Bridging Technical Expertise and Social Responsibility in AI Development" />
 
 AI-driven software systems have rapidly become a cornerstone of modern technology, transforming industries and creating endless opportunities for innovation. However, building these systems involves much more than mastering algorithms or fine-tuning data models. Integrating AI into software development requires a deeper understanding of the technical, ethical, and social implications of the technology. That’s where **SE4AI** comes in. This training program is designed to equip participants not just with the technical skills needed for AI development, but also with the broader societal understanding that these systems demand.
 

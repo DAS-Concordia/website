@@ -6,7 +6,10 @@ authors:
   url: /members/hassan-khatoonabadi
 ---
 
+import ViewCounter from "@site/src/components/ViewCounter";
+
 <h2>Taking the Guesswork Out of Code Reviews </h2>
+<ViewCounter pageKey="Taking the Guesswork Out of Code Reviews" />
 
 Have you ever submitted a pull request (PR) and found yourself checking for an update like you're tracking a package that won't budge? We've all been there—that limbo where anticipation meets frustration. Meanwhile, maintainers are staring at a pile of PRs, trying to figure out which ones need their attention and support. 
 

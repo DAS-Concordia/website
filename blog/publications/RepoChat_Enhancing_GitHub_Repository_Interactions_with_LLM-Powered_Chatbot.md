@@ -6,8 +6,11 @@ authors:
   url: /members/samuel-abedu
 ---
  
-<h2>RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot</h2>
+import ViewCounter from "@site/src/components/ViewCounter";
 
+
+<h2>RepoChat: Enhancing GitHub Repository Interactions with LLM-Powered Chatbot</h2>
+<ViewCounter pageKey="RepoChat" />
 
 In the dynamic landscape of software development, repositories like GitHub hold invaluable data, including source code, documentation, issue tracking, and commit histories. However, accessing and interpreting this information can be time-consuming and require considerable technical expertise. This complexity poses challenges, especially for non-technical stakeholders, such as project managers, who need insights without delving into technical details. 
 

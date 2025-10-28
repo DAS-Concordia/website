@@ -1,13 +1,17 @@
 ---
-title: Identifying Malicious Packages through Maintainer and Project Signals 
+title: Identifying Malicious Packages through Maintainer and Project Signals
 authors:
   name: Haya Samaana
   title: Master's Student
 url: https://www.linkedin.com/in/haya-samaana/
 ---
 
+import ViewCounter from "@site/src/components/ViewCounter";
+
+
 
 <h2>Identifying Malicious Packages through Maintainer and Project Signals </h2>
+<ViewCounter pageKey="malicious-packages" />
 
 Malicious software packages are increasingly targeting open-source ecosystems like PyPI (the Python Package Index), often introduced through subtle tactics such as typosquatting, misleading metadata, or suspicious maintainer activity. These packages can cause serious harm before they are detected. To help address this challenge, we developed a machine learning-based method that automatically identifies malicious PyPI packages by analyzing their metadata, code, configuration files, and other package-level signals.
 

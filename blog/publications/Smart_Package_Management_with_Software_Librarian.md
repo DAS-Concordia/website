@@ -7,8 +7,11 @@ authors:
 
 ---
 
+import ViewCounter from "@site/src/components/ViewCounter";
+
 
 <h2>Smart Package Management with Software Librarian </h2>
+<ViewCounter pageKey="Smart Package Management with Software Librarian" />
 
 In modern software development, open-source packages are essential building blocks that help developers innovate faster. However, managing these dependencies effectively is challenging. Issues such as outdated or deprecated libraries, licensing conflicts, and security vulnerabilities can compromise software quality. With the rise of AI-powered coding assistants like GitHub Copilot, ensuring that recommended packages are safe and reliable is more crucial than ever. 
 

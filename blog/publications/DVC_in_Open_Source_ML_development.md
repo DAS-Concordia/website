@@ -7,7 +7,10 @@ authors:
 
 
 ---
+import ViewCounter from "@site/src/components/ViewCounter";
+
 <h2>Data Version Control (DVC): A Foundational Tool for Reproducible Machine Learning Workflows</h2>
+<ViewCounter pageKey="DVC in Open Source ML-development -The Action and the Reaction" />
 
 Managing datasets, models, and experiments in data science is complex. Unlike source code, which is easily tracked with Git, data files are large, constantly changing, and difficult to version. Without a structured system, teams struggle with inconsistencies, lost work, and the inability to reproduce results. **Data Version Control (DVC)** extends Git to handle data, models, and entire workflows, ensuring seamless collaboration, reproducibility, and efficient tracking of every stage in a data science project.
 

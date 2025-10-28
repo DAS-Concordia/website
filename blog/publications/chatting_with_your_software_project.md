@@ -6,8 +6,11 @@ authors:
   url: /members/ahmad-abdellatif
 tags: [bot, chat, botse]
 ---
-<h2>Chatting with your software project!</h2>
+import ViewCounter from "@site/src/components/ViewCounter";
 
+
+<h2>Chatting with your software project!</h2>
+<ViewCounter pageKey="Chatting with your software project!" />
 
 No matter where you stand in the software development food-chain, analyzing your software repository to get insights into your own project is part of the day-to-day business. Developers use the repository to identify (and blame!) the colleague that introduced that nasty piece of code, managers use the repository to get productivity metrics on their teams and everyone ends up checking Stack Overflow on how to find the right git command to do just that.
 
