@@ -7,7 +7,12 @@ authors:
   url: /members/farbod-farhour
 tags: [ AlphaBot, WeakSupervision, SoftwareEngineeringChatbots, Automation]
 ---
+
+import ViewCounter from "@site/src/components/ViewCounter";
+
+
 <h2>AlphaBot :The Smart Solution for Smarter Software Chatbots </h2>
+<ViewCounter pageKey="AlphaBot The Smart Solution for Smarter Software Chatbots" />
 
 Training chatbots to handle **software engineering (SE)** queries presents unique challenges due to the technical and domain specific nature of the field. Unlike general conversational AI, SE chatbots must accurately interpret specialized terms like “bug” (software defect) or “commit” (code changes). These terms carry precise meanings within the context of software development, making them difficult to process with standard methods. 
 

@@ -4,7 +4,7 @@ import styles from "./Tools.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFilePdf } from "@fortawesome/free-regular-svg-icons";
- 
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 // Importing images 
 import TheSoftwareLibrarianImage from "../images/TheSoftwareLibrarian.jpg";
 import codemapperImage from "../images/codemapper.jpg";
@@ -35,7 +35,8 @@ const tools = [
     toolName: "RepoChat",
     image: RepochatImage,
     pdf:"https://das.encs.concordia.ca/pdf/abedu2025repochat.pdf",
-    link:"https://repochattool.streamlit.app/"
+    link:"https://repochattool.streamlit.app/",
+    dataset:"https://zenodo.org/records/14673951"
   },
   {
     id: "Jasmine-Latendresse",
@@ -51,7 +52,8 @@ const tools = [
     toolName: "Code Mapper",
     // link: "https://codemapper.alwaysdata.net/",
     image: codemapperImage,
-    pdf:"https://das.encs.concordia.ca/pdf/letourneau2024code.pdf"
+    pdf:"https://das.encs.concordia.ca/pdf/letourneau2024code.pdf",
+    dataset:"https://github.com/jaslatendresse/codemapper"
   },
 
 
@@ -61,15 +63,17 @@ const tools = [
     toolName: "DEPHEALTH ",
     // link: "http://104.237.154.205:8443/?fbclid=IwAR3qdZPNXISqK7VkPNXYQaEhtdxKR8nBEbmqGJI7Z-nHw9f6_oSNAjLc_dI",
     image: DepHealthImage,
+    github:"https://github.com/mahmoud-alfadel/DepHealth?tab=readme-ov-file",
     pdf:"https://das.encs.concordia.ca/pdf/Alfadel_EMSE2023.pdf"
   },
   {
     id: "Mahmoud Alfadel    ",
-    name: "Mahmoud Alfadel, Diego Elias Costa, Emad Shihab, and Bram Adams.    ",
+    name: "Mahmoud Alfadel, Diego Costa, Emad Shihab, and Bram Adams. ",
     toolName: "DepReveal ",
     image: DepRevealImage,
-    github:"https://github.com/mahmoud-alfadel/DepReveal",
-    pdf:"https://das.encs.concordia.ca/pdf/Alfadel_TOSEM2022.pdf"
+    // github:"https://github.com/mahmoud-alfadel/DepReveal",
+    pdf:"https://das.encs.concordia.ca/pdf/Alfadel_TOSEM2022.pdf",
+    dataset:"https://zenodo.org/records/6407446?utm_source=chatgpt.com"
   },
   {
     id: "Khaled Badran",
@@ -87,6 +91,7 @@ const tools = [
     pdf:"https://das.encs.concordia.ca/pdf/abdellatif_MSR2022.pdf",
     github:"https://github.com/ahmad-abdellatif/BotHunter",
     // link:"https://askgit.io/",
+    // dataset:"https://www.researchgate.net/publication/359635576_BotHunter_An_Approach_to_Detect_Software_Bots_in_GitHub"
   },
   {
     id: "Abbas Javan Jafari    ",
@@ -96,13 +101,7 @@ const tools = [
     image: DependencyImage,
     pdf:"https://das.encs.concordia.ca/pdf/Javan_2021TSE.pdf"
   },
-  {
-    id: "Jinfu Chen ",
-    name: "Jinfu Chen, Weiyi Shang, and Emad Shihab.",
-    toolName: "PerfJIT  ",
-    image: PerfJITImage,
-    pdf:"/https://das.encs.concordia.ca/pdf/chen_tse2020.pdf"
-  },
+
   {
     id: "Ahmad Abdellatif    ",
     name: "Ahmad Abdellatif, Khaled Badran, Emad Shihab.   ",
@@ -112,15 +111,7 @@ const tools = [
     github:"https://github.com/ahmad-abdellatif/MSRBot?utm_source=chatgpt.com",
     // link:"https://askgit.io/",
   },
-  {
-    id: "Ahmad Abdellatif    ",
-    name: "Ahmad Abdellatif, Yi Zeng, Mohamed Elshafei, Emad Shihab, and Weiyi Shang.",
-    toolName: "Npms-simplified",
-    image: npmssimplifiedImage,
-    pdf:"https://das.encs.concordia.ca/pdf/abdellatif_ist2020.pdf",
-    // github:"https://github.com/ahmad-abdellatif/MSRBot?utm_source=chatgpt.com",
-    // link:"https://askgit.io/",
-  },
+  
   {
     id: "Rabe Abdalkareem",
     name: "Rabe Abdalkareem, Suhaib Mujahid, Emad Shihab, and Juergen Rilling.",
@@ -130,15 +121,7 @@ const tools = [
     github:"https://github.com/suhaibmujahid/ci-skipper",
     // link:"https://askgit.io/",
   },
-  {
-    id: "Mehran Hassani",
-    name: "Mehran Hassani, Weiyi Shang, Emad Shihab, and Nikolaos Tsantalis.",
-    toolName: "LogBugFinder",
-    image: LogBugFinderImage,
-    pdf:"https://das.encs.concordia.ca/pdf/hassani_emse2018.pdf",
-    // github:"https://mehranhassani.github.io/LogBugFinder/",
-    // link:"https://askgit.io/",
-  },
+ 
   {
     id: "Zhongxin Liu",
     name: "Zhongxin Liu ,Qiao Huang ,Xin Xia ,Emad Shihab ,David Lo , and Shanping Li.",
@@ -147,22 +130,7 @@ const tools = [
     pdf:"https://das.encs.concordia.ca/pdf/liu_icse2018.pdf",
     link:"https://goo.gl/ZzjBzp",
   },
-  {
-    id: "Suhaib Mujahid",
-    name: "Suhaib Mujahid, Rabe Abdalkareem, and Emad Shihab.",
-    toolName: "PERMLYZER",
-    image: PERMLYZERImage,
-    pdf:"https://das.encs.concordia.ca/pdf/mujahid_icsme_2018.pdf",
-    // link:"https://goo.gl/ZzjBzp",
-  },
-  {
-    id: "Yuecai Zhu",
-    name: "Yuecai Zhu, Emad Shihab, and Peter C. Rigby.",
-    toolName: "CODYNAQ",
-    image: CODYNAQImage,
-    pdf:"https://das.encs.concordia.ca/pdf/zhu_icsme2018.pdf",
-    // link:"https://goo.gl/ZzjBzp",
-  },
+
   {
     id: "Emad Shihab    ",
     name: "Emad Shihab, Christoffer Rosen, and Ben Grawi.    ",
@@ -171,22 +139,7 @@ const tools = [
     pdf:"https://users.encs.concordia.ca/~eshihab/pubs/Rosen_FSE2015Tool.pdf",
     link:"http://commit.guru/?fbclid=IwY2xjawIExgRleHRuA2FlbQIxMAABHQWFOAoglPOT40_n0h7QjuOHdnfNkunk179EmwmQUg_2B6qB7iTdN39lpA_aem_sz5ZQpSL0e2uL3fyS8_fnw"
   },
-  {
-    id: "Daniel E. Krutz ",
-    name: "Daniel E. Krutz and Emad Shihab",
-    toolName: "CCCD: Concolic code clone detection",
-    image: ConcolicCodeCloneDetectionImage,
-    pdf:"https://das.encs.concordia.ca/pdf/Krutz_WCRE2013.pdf",
-    // link:"https://goo.gl/ZzjBzp",
-  },
-  {
-    id: "Emad Shihab ",
-    name: "Emad Shihab, Zhen Ming Jiang and Ahmed E. Hassan",
-    toolName: " IRC Analyzer Framework",
-    image: IRCAnalyzerFrameworkImage,
-    pdf:"https://das.encs.concordia.ca/pdf/Shihab_MSR2009Challenge.pdf",
-    // link:"https://goo.gl/ZzjBzp",
-  },
+ 
 ];
 
 // The ToolsList component to display all tools
@@ -247,7 +200,16 @@ className= "button button--outline button--sm button--secondary" >
  target="_blank"
  rel="noopener noreferrer"
 className= "button button--outline button--sm button--secondary">
+  
  Tool
+ </a>              
+ )}
+ {tool.dataset && (            
+<a href={tool.dataset}
+ target="_blank"
+ rel="noopener noreferrer"
+className= "button button--outline button--sm button--secondary">
+  <FontAwesomeIcon icon={faDatabase} />  Data
  </a>              
  )}
 </div>

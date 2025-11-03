@@ -8,7 +8,12 @@ authors:
 
 ---
 
+import ViewCounter from "@site/src/components/ViewCounter";
+
+
 <h2>Code Mapper: Charting the Global Pulse of Open Source.</h2>
+<ViewCounter pageKey="Code Mapper - Charting the Global Pulse of Open Source." />
+
 
 Open source is more than just code, it’s a global movement fueled by collaboration across borders. Every repository, every commit, and every pull request represent the collective effort of developers worldwide. But despite this vast interconnected network, the **geographical reach** of open-source contributions often goes unnoticed. **Code Mapper** changes that.
 
