@@ -33,10 +33,10 @@ const config = {
           path: './blog',
           routeBasePath: 'blog',
           // Base URL for the blog
-          showReadingTime: false,
+          showReadingTime: true,
           editUrl: "https://github.com/DAS-Concordia/website/edit/main/blog",
           postsPerPage: 1, // Disable pagination
-          include: ["**/*.md"],         // Includes all Markdown files
+          include: ["**/*.md", '**/*.mdx' ],         // Includes all Markdown files
           blogSidebarCount:0
 
         },
@@ -76,7 +76,11 @@ const config = {
 
           // { to: "/event", label: "Event", position: "left" },
           { to: "/tools", label: "Tools", position: "left" },
-       
+          // { to: "/data", label: "Data", position: "left" },
+          // { to: "/data1", label: "Data1", position: "left" },
+          // { to: "/data2", label: "Data2", position: "left" },
+
+
 
 
        
