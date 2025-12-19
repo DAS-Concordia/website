@@ -21,6 +21,7 @@ const SE4AITrainingProgramImage= require("../images/Blog/SE4AITrainingProgram.jp
 const DependencyUpdateStrategiesImage= require("../images/Blog/DependencyUpdateStrategies.jpg").default;
 
 const IdentifyingMaliciousPackagesImage= require("../images/Blog/IdentifyingMaliciousPackages.jpeg").default;
+const TheNPMecosystemImage= require("../images/Blog/TheNPMecosystem.jpg").default;
 
 
 
@@ -40,6 +41,19 @@ const IdentifyingMaliciousPackagesImage= require("../images/Blog/IdentifyingMali
 const blogPosts = [
   {
 
+    title: "NPM and the Trade-Offs of Reuse ",
+    authorName: "Haya Samaana",
+    image: TheNPMecosystemImage,
+    authorUrl: "https://www.linkedin.com/in/haya-samaana/",
+    authorRole: "Master's Student",
+    description:
+      "The NPM ecosystem has become central to modern software development, offering a vast repository of packages that developers can reuse rather than build from scratch. This reuse brings strong productivity gains but also exposes entire systems to significant risk, because when many developers rely on a small number of upstream libraries, a vulnerability in one library can propagate widely.",
+postUrl: "/blog/publications/NPM_and_the_Trade_Offs_of_Reuse"
+  },
+
+
+  {
+
     title: "Identifying Malicious Packages through Maintainer and Project Signals ",
     authorName: "Haya Samaana",
     image: IdentifyingMaliciousPackagesImage,
@@ -47,7 +61,7 @@ const blogPosts = [
     authorRole: "Master's Student",
     description:
       "Malicious software packages are increasingly targeting open-source ecosystems like PyPI (the Python Package Index), often introduced through subtle tactics such as typosquatting, misleading metadata, or suspicious maintainer activity. These packages can cause serious harm before they are detected. To help address this challenge, we developed a machine learning-based method that automatically identifies malicious PyPI packages by analyzing their metadata, code, configuration files, and other package-level signals.",
-    postUrl: "/blog/publications/Identifying_Malicious_Packages_through_Maintainer_and_Project_Signals",
+postUrl: "/blog/publications/Identifying_Malicious_Packages_through_Maintainer_and_Project_Signals"
   },
   {
 
