@@ -23,6 +23,7 @@ const DependencyUpdateStrategiesImage= require("../images/Blog/DependencyUpdateS
 const IdentifyingMaliciousPackagesImage= require("../images/Blog/IdentifyingMaliciousPackages.jpeg").default;
 const TheNPMecosystemImage= require("../images/Blog/TheNPMecosystem.jpg").default;
 
+const AIChatbotImage =require("../images/Blog/AIChatbotforthePharmaceuticalIndustry.jpeg").default;
 
 
 
@@ -39,6 +40,17 @@ const TheNPMecosystemImage= require("../images/Blog/TheNPMecosystem.jpg").defaul
 // }
  
 const blogPosts = [
+   {
+
+    title: "Engineering a Regulatory-Compliant AI Chatbot for the Pharmaceutical Industry ",
+    authorName: "Samuel Abedu",
+    image: AIChatbotImage,
+    authorUrl: "/members/samuel-abedu",
+    authorRole: "PhD Student",
+    description:
+      "The NPM ecosystem has become central to modern software development, offering a vast repository of packages that developers can reuse rather than build from scratch. This reuse brings strong productivity gains but also exposes entire systems to significant risk, because when many developers rely on a small number of upstream libraries, a vulnerability in one library can propagate widely.",
+postUrl: "/blog/publications/Engineering_a_Regulatory_Compliant_AI_Chatbot_for_the_Pharmaceutical_Industry"
+  },
   {
 
     title: "NPM and the Trade-Offs of Reuse ",
