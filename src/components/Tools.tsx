@@ -25,10 +25,19 @@ import PERMLYZERImage from "../images/PERMLYZER.jpg";
 import CODYNAQImage from "../images/CODYNAQ.jpg";
 import ConcolicCodeCloneDetectionImage from "../images/ConcolicCodeCloneDetection.jpg";
 import IRCAnalyzerFrameworkImage from "../images/IRCAnalyzerFramework.jpg";
+import ArtifactSyncImage from "../images/ArtifactSync.jpeg";
 
 
 // Tools Data
 const tools = [
+    {
+    id: "Ebube Alor",
+    name: "Ebube Alor, SayedHassan Khatoonabadi, João Pedro de Souza Olivo Tardivo, Emad Shihab.",
+    toolName: "ArtifactSync",
+    image: ArtifactSyncImage,
+    pdf:"https://das.encs.concordia.ca/pdf/ebube_ICSE2026.pdf",
+    github:"https://github.com/Alor-e/artifact-sync"
+  },
   {
     id: "samuel-abedu",
     name: "Samuel Abedu, Laurine Menneron, SayedHassan Khatoonabadi, Emad Shihab.",
