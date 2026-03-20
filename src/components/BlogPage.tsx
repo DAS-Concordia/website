@@ -24,7 +24,7 @@ const IdentifyingMaliciousPackagesImage= require("../images/Blog/IdentifyingMali
 const TheNPMecosystemImage= require("../images/Blog/TheNPMecosystem.jpg").default;
 
 const AIChatbotImage =require("../images/Blog/AIChatbotforthePharmaceuticalIndustry.jpeg").default;
-
+const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jpeg").default;
 
 
 
@@ -40,6 +40,17 @@ const AIChatbotImage =require("../images/Blog/AIChatbotforthePharmaceuticalIndus
 // }
  
 const blogPosts = [
+     {
+
+    title: "Keeping Software Artifacts Synchronized with ArtifactSync",
+    authorName: "Ebube Alor",
+    image: ArtifactSyncImage,
+    authorUrl: "/members/alor-ebube",
+    authorRole: "PhD Student",
+    description:
+      "Modern software repositories contain more than source code. Documentation, unit tests, configuration files, and build scripts are also essential parts of a project. These artifacts help developers understand and maintain the system. When the source code changes, related artifacts often need updates as well. If these updates are not performed together, inconsistencies appear across the repository. Documentation can become outdated, tests may fail or become irrelevant, and builds may break. Over time, this lack of synchronization increases maintenance effort and makes software systems harder to manage.",
+    postUrl: "/blog/publications/Keeping_Software_Artifacts_Synchronized_with_ArtifactSync"
+  },
    {
 
     title: "Engineering a Regulatory-Compliant AI Chatbot for the Pharmaceutical Industry ",
