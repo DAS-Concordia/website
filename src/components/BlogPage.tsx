@@ -26,8 +26,7 @@ const TheNPMecosystemImage= require("../images/Blog/TheNPMecosystem.jpg").defaul
 const AIChatbotImage =require("../images/Blog/AIChatbotforthePharmaceuticalIndustry.jpeg").default;
 const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jpeg").default;
 
-
-
+ const CreateAIBuildFrontEndAppsImage =require("../images/Blog/CreateAIBuildFrontEndApps.jpeg").default;
 
 // interface BlogPost {
 //   title: string;
@@ -40,6 +39,17 @@ const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jp
 // }
  
 const blogPosts = [
+       {
+
+    title: " Can AI Build Front-End Apps from Designs and Requirements? ",
+    authorName: "Caren Rizk",
+    image: CreateAIBuildFrontEndAppsImage,
+    authorUrl: "/members/caren-rizk",
+    authorRole: "Master's Student",
+    description:
+      "Front-end development is inherently collaborative and often messy. Product managers define features through user stories; designers create interfaces in tools like Figma, and developers translate both into code. This translation step is where inconsistencies often appear: the final implementation may drift from the original requirements, the visual design, or both. ",
+    postUrl: "/blog/publications/Can_AI_Build_Front_End_Apps_from_Designs_and_Requirements"
+  },
      {
 
     title: "Keeping Software Artifacts Synchronized with ArtifactSync",
