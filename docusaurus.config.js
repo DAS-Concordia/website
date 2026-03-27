@@ -76,7 +76,7 @@ const config = {
 
           // { to: "/event", label: "Event", position: "left" },
           { to: "/tools", label: "Tools", position: "left" },
-          // { to: "/data", label: "Data", position: "left" },
+          { to: "/test"},
           // { to: "/data1", label: "Data1", position: "left" },
           // { to: "/data2", label: "Data2", position: "left" },
 
