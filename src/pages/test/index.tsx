@@ -7,7 +7,7 @@ import PageHeader from "../../components/PageHeader";
 export default function Members() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout title="Test " description="The labs's tools.">
+    <Layout title="Test " description="The labs's test page">
       <PageHeader title="Test " />
 
       <main> 
