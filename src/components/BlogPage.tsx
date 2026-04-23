@@ -26,8 +26,8 @@ const TheNPMecosystemImage= require("../images/Blog/TheNPMecosystem.jpg").defaul
 const AIChatbotImage =require("../images/Blog/AIChatbotforthePharmaceuticalIndustry.jpeg").default;
 const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jpeg").default;
 
- const CreateAIBuildFrontEndAppsImage =require("../images/Blog/CreateAIBuildFrontEndApps.jpeg").default;
-
+const CreateAIBuildFrontEndAppsImage =require("../images/Blog/CreateAIBuildFrontEndApps.jpeg").default;
+const UnderstandingDeveloperChallengesImage =require("../images/Blog/UnderstandingDeveloperChallenges.jpeg").default;
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -38,7 +38,18 @@ const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jp
 //   postUrl: string;
 // }
  
-const blogPosts = [
+const blogPosts = [   
+      {
+
+    title: " Understanding Developer Challenges in the Adoption of the Model Context Protocol ",
+    authorName: "Oluwatoyosi Oyelayo",
+    image: UnderstandingDeveloperChallengesImage,
+    authorUrl: "/members/oluwatoyosi-oyelayo",
+    authorRole: "Master's Student",
+    description:
+      "Recent developments in artificial intelligence have enabled the development of AI agents that can interact with external tools and services. These agents extend the capabilities of language models by allowing them to access external resources and perform tasks that require interaction with systems outside the model environment.",
+    postUrl: "/blog/publications/Understanding_Developer_Challenges_in_the_Adoption_of_the_Model_Context_Protocol"
+  },
        {
 
     title: " Can AI Build Front-End Apps from Designs and Requirements? ",
