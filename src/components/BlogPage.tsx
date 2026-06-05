@@ -28,6 +28,8 @@ const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jp
 
 const CreateAIBuildFrontEndAppsImage =require("../images/Blog/CreateAIBuildFrontEndApps.jpeg").default;
 const UnderstandingDeveloperChallengesImage =require("../images/Blog/UnderstandingDeveloperChallenges.jpeg").default;
+const OpenClassGenImage =require("../images/Blog/OpenClassGen.jpeg").default;
+
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -39,6 +41,17 @@ const UnderstandingDeveloperChallengesImage =require("../images/Blog/Understandi
 // }
  
 const blogPosts = [   
+        {
+
+    title: " OpenClassGen: Bringing Real-World Class-Level Code Generation to LLM Research ",
+    authorName: "Musfiqur Rahman",
+    image: OpenClassGenImage,
+    authorUrl: "/members/musfiqur-rahman",
+    authorRole: "PhD Student",
+    description:
+      "Large language models (LLMs) have advanced code generation research and led to the development of multiple evaluation benchmarks. Most existing benchmarks focus on function-level code generation, where models generate isolated and self-contained functions. Repository-level benchmarks require models to work with complete software projects and resolve dependencies across files.",
+    postUrl: "/blog/publications/OpenClassGen_Bringing_Real_World_Class_Level_Code_Generation_to_LLM_Research"
+  },
       {
 
     title: " Understanding Developer Challenges in the Adoption of the Model Context Protocol ",
