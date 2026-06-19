@@ -29,7 +29,7 @@ const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jp
 const CreateAIBuildFrontEndAppsImage =require("../images/Blog/CreateAIBuildFrontEndApps.jpeg").default;
 const UnderstandingDeveloperChallengesImage =require("../images/Blog/UnderstandingDeveloperChallenges.jpeg").default;
 const OpenClassGenImage =require("../images/Blog/OpenClassGen.jpeg").default;
-
+const EvaluatingtheUseofLLMsImage =require("../images/Blog/EvaluatingtheUseofLLMs.jpeg").default;
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -41,6 +41,17 @@ const OpenClassGenImage =require("../images/Blog/OpenClassGen.jpeg").default;
 // }
  
 const blogPosts = [   
+         {
+
+    title: "Evaluating the Use of LLMs for Automated DOM-Level Resolution of Web Performance Issues ",
+    authorName: "Gideon Peters",
+    image: EvaluatingtheUseofLLMsImage,
+    authorUrl: "/members/gideon-peters",
+    authorRole: "Masters Student",
+    description:
+      "Web performance is an important aspect of user experience, engagement, and conversion rates. One important client-side factor is the Document Object Model (DOM), which influences how browsers render and interact with webpages. Optimizing the DOM is challenging because modifications must balance functionality and performance.",
+    postUrl: "/blog/publications/Evaluating_the_Use_of_LLMs_for_Automated_DOM_Level_Resolution_of_Web_Performance_Issues"
+  },
         {
 
     title: " OpenClassGen: Bringing Real-World Class-Level Code Generation to LLM Research ",
