@@ -29,7 +29,8 @@ const ArtifactSyncImage =require("../images/Blog/ArtifactSync_Modern_software.jp
 const CreateAIBuildFrontEndAppsImage =require("../images/Blog/CreateAIBuildFrontEndApps.jpeg").default;
 const UnderstandingDeveloperChallengesImage =require("../images/Blog/UnderstandingDeveloperChallenges.jpeg").default;
 const OpenClassGenImage =require("../images/Blog/OpenClassGen.jpeg").default;
-
+const EvaluatingtheUseofLLMsImage =require("../images/Blog/EvaluatingtheUseofLLMs.jpeg").default;
+const LargeLanguageModelsImage =require("../images/Blog/LargeLanguageModels.jpeg").default;
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -40,7 +41,29 @@ const OpenClassGenImage =require("../images/Blog/OpenClassGen.jpeg").default;
 //   postUrl: string;
 // }
  
-const blogPosts = [   
+const blogPosts = [  
+           {
+
+    title: "Can Large Language Models Connect Documentation to Code More Effectively?",
+    authorName: "Alor Ebube",
+    image: LargeLanguageModelsImage,
+    authorUrl: "/members/alor-ebube",
+    authorRole: "PhD Student",
+    description:
+      "Documentation plays a vital role in software development by aiding communication among team members, providing guidance for software usage, and serving as a reference for maintenance and future development. It helps developers and users understand the system’s functionality, design decisions, and usage instructions. However, establishing and maintaining accurate traceability between documentation and code presents significant challenges. Documentation is often written in free-flowing, unstructured natural language and may contain ambiguous or implicit references, while source code consists of formal, structured elements. This difference makes it difficult to map documentation precisely to the relevant code, particularly when a single documentation segment relates to multiple code elements.",
+    postUrl: "/blog/publications/Can_Large_Language_Models_Connect_Documentation_to_Code_More_Effectively"
+  }, 
+         {
+
+    title: "Evaluating the Use of LLMs for Automated DOM-Level Resolution of Web Performance Issues ",
+    authorName: "Gideon Peters",
+    image: EvaluatingtheUseofLLMsImage,
+    authorUrl: "/members/gideon-peters",
+    authorRole: "Masters Student",
+    description:
+      "Web performance is an important aspect of user experience, engagement, and conversion rates. One important client-side factor is the Document Object Model (DOM), which influences how browsers render and interact with webpages. Optimizing the DOM is challenging because modifications must balance functionality and performance.",
+    postUrl: "/blog/publications/Evaluating_the_Use_of_LLMs_for_Automated_DOM_Level_Resolution_of_Web_Performance_Issues"
+  },
         {
 
     title: " OpenClassGen: Bringing Real-World Class-Level Code Generation to LLM Research ",
