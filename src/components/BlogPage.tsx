@@ -31,6 +31,7 @@ const UnderstandingDeveloperChallengesImage =require("../images/Blog/Understandi
 const OpenClassGenImage =require("../images/Blog/OpenClassGen.jpeg").default;
 const EvaluatingtheUseofLLMsImage =require("../images/Blog/EvaluatingtheUseofLLMs.jpeg").default;
 const LargeLanguageModelsImage =require("../images/Blog/LargeLanguageModels.jpeg").default;
+const SynergizingLLMsImage =require("../images/Blog/SynergizingLLMs.jpeg").default;
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -42,6 +43,17 @@ const LargeLanguageModelsImage =require("../images/Blog/LargeLanguageModels.jpeg
 // }
  
 const blogPosts = [  
+             {
+
+    title: "Synergizing LLMs and Knowledge Graphs for Software Repository-Related Question Answering",
+    authorName: "Samuel Abedu",
+    image: SynergizingLLMsImage,
+    authorUrl: "/members/samuel-abedu",
+    authorRole: "PhD Student",
+    description:
+      "Software repositories contain valuable information for understanding the software development process. They record commits, issues, files, and developer activities that can provide insights into project evolution, developer contributions, and bug-fixing activities. However, extracting meaningful insights from repository data is time-consuming and often requires technical expertise. Answering a question such as “Which developer fixed the most bugs in a particular file?” may require collecting data, connecting multiple repository entities, and writing specialized queries.",
+    postUrl: "/blog/publications/Synergizing_LLMs_and_Knowledge_Graphs_for_Software_Repository_Related_Question_Answering"
+  }, 
            {
 
     title: "Can Large Language Models Connect Documentation to Code More Effectively?",
