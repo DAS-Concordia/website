@@ -32,6 +32,7 @@ const OpenClassGenImage =require("../images/Blog/OpenClassGen.jpeg").default;
 const EvaluatingtheUseofLLMsImage =require("../images/Blog/EvaluatingtheUseofLLMs.jpeg").default;
 const LargeLanguageModelsImage =require("../images/Blog/LargeLanguageModels.jpeg").default;
 const SynergizingLLMsImage =require("../images/Blog/SynergizingLLMs.jpeg").default;
+const npmpackageImage =require("../images/Blog/npmpackage.jpeg").default;
 // interface BlogPost {
 //   title: string;
 //   authorName: string;
@@ -43,8 +44,17 @@ const SynergizingLLMsImage =require("../images/Blog/SynergizingLLMs.jpeg").defau
 // }
  
 const blogPosts = [  
-             {
-
+  {
+    title: "What Makes an npm Package Highly Selected? Insights from a Large-Scale Study",
+    authorName: "Suhaib Mujahid",
+    image: npmpackageImage,
+    authorUrl: "/members/suhaib-mujahid",
+    authorRole: "PhD Student",
+    description:
+      "There are massive numbers of packages available in the npm ecosystem, and many of them provide similar functionalities. So, when developers need a package, how do they decide which one to use? What makes some npm packages stand out and experience high interest from developers while others do not? These are important questions because finding the right package to use can be challenging, especially when many packages provide similar functionalities. Understanding what makes a package highly selected can help developers decide which packages to select among many existing options. It can also help improve package recommendation systems and the user experience of package search engines.",
+    postUrl: "/blog/publications/What_Makes_an_npm_Package_Highly_Selected_Insights_from_a_Large_Scale_Study"
+  }, 
+{
     title: "Synergizing LLMs and Knowledge Graphs for Software Repository-Related Question Answering",
     authorName: "Samuel Abedu",
     image: SynergizingLLMsImage,
